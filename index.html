@@ -16,84 +16,44 @@
 <![endif]-->
 
 <header id="header" class="header"> <!-- header -->
-    <figure class="logotipo"> <!-- logotipo -->
-        <img src="assets/static/logo.png" style="width:100%; max-width:200px" alt="Invie logotipo"/>
-    </figure>
-    <nav class="nav_menu"> <!-- menu -->
-        <ul class="">
-            <li>
-                <a class="search_job">Buscar empleo <i class="open_menu is_closed"></i></a>
-                <ul class="search_job_iems">
-                    <li>
-                        Categoria
-                    </li>
-                    <li>
-                        Pais
-                    </li>
-                    <li>
-                        Empresa
-                    </li>
-                    <li>
-                        Fecha de publicación
-                    </li>
-                    <li>
-                        Salario
-                    </li>
-                    <li>
-                        Disponibilidad
-                    </li>
-                </ul>
-            </li> <!-- Search job -->
-            <li>
-                <a >Destacados</a>
-                <ul class="">
-                    <li>
-                        RockaLabs
-                    </li>
-                    <li>
-                        Parmalat
-                    </li>
-                    <li>
-                        Mobil
-                    </li>
-                    <li>
-                        Ecopetrol
-                    </li>
-                </ul>
-            </li> <!-- Featured -->
-            <li>
-                <a href="precios.html">Convocatorias</a>
-            </li> <!-- Calls -->
-        </ul>
-        <button> Iniciar sesión </button> <!-- Login -->
+    <nav class="main_nav">
+        <div class="logotipo"> <!-- logotipo -->
+            <img src="assets/static/logo.png" style="width:100%; max-width:200px" alt="Invie logotipo"/>
+        </div><!-- Logo -->
+
+        <nav class="nav_menu">
+            <ul class="nav_list">
+                <a href="#"><li>Buscar empleo</li></a>
+                <a href="#"><li>Destacados</li></a>
+                <a href="#"><li>Convocatorias</li></a>
+                <a href="#"><li>Reclutados</li></a>
+            </ul>
+            <button class="btn_nav_login">Iniciar Sesion</button>
+        </nav>
     </nav>
 </header>
 
-<section class="portada" id="portada"> <!-- portada -->
-    <h1 class="titulo">Guitarras inviesibles</h1><!-- titulo -->
-    <h3 class='title-a'>Sé la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
-    <button>Conoce mas</button><!-- boton -->
+<section class="main column-6" id="main"> <!-- main -->
+    <h1 class="title">Amar tu trabajo no tiene precio...</h1><!-- title -->
+    <h3 class='sub_title'>Tu mejor empleo te esta esperando</h3><!-- subtitle -->
 </section>
-<section class="guitarras" id="guitarras" > <!-- guitarras -->
-    <h2>Nuestra guitarras</h2><!-- titulo -->
-    <article class="guitarra"> <!-- guitarra 1 -->
-        <img src="images/invie-acustica.png" alt="Guitarra Invie Acustica" width="200"/>
-        <h3 class='title-b'>Invie Acustica</h3>
-        <ol>
-            <li>Estilo vintage</li>
-            <li>Madera pura</li>
-            <li>Incluye estuche invisible de aluminio</li>
-        </ol>
-    </article>
-    <article class="guitarra"> <!-- guitarra 2 -->
-        <img src="images/invie-classic.png" alt="Guitarra Invie Classic" width="200"/>
-        <h3 class='title-b'>Invie Classic</h3>
-        <ol>
-            <li>Estilo vintage</li>
-            <li>Liviana</li>
-            <li>Inicia tu camino como Rockstar</li>
-        </ol>
-    </article>
+
+<section class="register column-6" id="register" > <!-- register -->
+    <label class="register_label">Registrate</label><!-- label register -->
+    <div class="social_register"> <!--  Social register -->
+        <button class="btn_default linkedin_register">Conectar con Linkedin</button> <!--  Linked in register -->
+        <button class="btn_default facebook_register">Conectar con Facebook</button> <!--  Facebook in register -->
+    </div>
+
+    <span>Or</span>
+
+    <div class="local_register"> <!-- Local register -->
+        <form action="">
+            <input class="input_default email_input" type="text" placeholder="E-mail">
+            <input class="input_default email_contraseña" type="password" placeholder="Contraseña">
+            <button class="btn_default register">Registrarse</button>
+        </form>
+    </div>
 </section>
 
 <script src="js/main.js"></script>

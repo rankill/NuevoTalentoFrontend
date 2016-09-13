@@ -65,3 +65,11 @@ $breakpoints: (
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '../../../assets/' !default;
+
+// grid variables
+$grid-columns: 12;
+$grid-max-width: 65em;
+
+
+//Breakpoint control
+$screen_breakpoint:768px;

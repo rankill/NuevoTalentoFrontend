@@ -1,3 +1,107 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+header {
+    height: 80px;
+
+    .main_nav {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px 0 20px;
+        height: 100%;
+        background-color: rgba(34, 34, 34, 0.47);
+
+        .logotipo {
+            margin: 0;
+        }
+
+        // Content Wrapper
+        .nav_menu {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .nav_list {
+                display: flex;
+                justify-content: space-around;
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    transition: all .5s ease;
+                }
+            }
+
+            li {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// Full Navigation, including mobile menu
+//nav {
+//    ul {
+//        display: flex;
+//        justify-content: space-between;
+//        list-style-type: none;
+//        width: 50%;
+//
+//        a {
+//            text-decoration: none;
+//            transition: all .5s ease;
+//        }
+//    }
+//
+//    li  {
+//        display: inline-block;
+//    }
+//
+//    #menu-toggle {display: none;}
+//
+//    .label-toggle {display: none;}
+//
+//    .wrapper {
+//        align-items: center;
+//        display: flex;
+//        justify-content: space-between;
+//    }
+//
+//    @media screen and (max-width: 768px) {
+//        ul {
+//            display: block;
+//            height: 0;
+//            list-style-type: none;
+//            opacity: 0;
+//            text-align: center;
+//            transition: all 1s ease;
+//            width: 100%;
+//            visibility: hidden;
+//        }
+//
+//        li {
+//            display: block;
+//            font-size: 1.5em;
+//            padding: 2em 0;
+//        }
+//
+//        #menu-toggle:checked ~ ul {
+//            opacity: 1;
+//            height: 100vh;
+//            visibility: visible;
+//        }
+//
+//        .label-toggle {
+//            cursor: pointer;
+//            display: block;
+//            float: right;
+//            height: 35px;
+//            margin-top: 1em;
+//            width: 35px;
+//        }
+//
+//        .wrapper {display: block;}
+//    }
+//}

@@ -593,3 +593,114 @@ body {
   position: absolute;
   width: 1px;
 }
+
+/* line 4, ../sass/layout/_header.scss */
+header {
+  height: 80px;
+}
+/* line 7, ../sass/layout/_header.scss */
+header .main_nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.47);
+}
+/* line 15, ../sass/layout/_header.scss */
+header .main_nav .logotipo {
+  margin: 0;
+}
+/* line 20, ../sass/layout/_header.scss */
+header .main_nav .nav_menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/* line 26, ../sass/layout/_header.scss */
+header .main_nav .nav_menu .nav_list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+/* line 31, ../sass/layout/_header.scss */
+header .main_nav .nav_menu .nav_list a {
+  text-decoration: none;
+  transition: all .5s ease;
+}
+/* line 37, ../sass/layout/_header.scss */
+header .main_nav .nav_menu li {
+  display: inline-block;
+}
+
+/* line 7, ../sass/layout/_grid_system.scss */
+.column-1 {
+  width: 8.33333%;
+}
+
+/* line 7, ../sass/layout/_grid_system.scss */
+.column-2 {
+  width: 16.66667%;
+}
+
+/* line 7, ../sass/layout/_grid_system.scss */
+.column-3 {
+  width: 25%;
+}
+
+/* line 7, ../sass/layout/_grid_system.scss */
+.column-4 {
+  width: 33.33333%;
+}
+
+/* line 7, ../sass/layout/_grid_system.scss */
+.column-5 {
+  width: 41.66667%;
+}
+
+/* line 7, ../sass/layout/_grid_system.scss */
+.column-6 {
+  width: 50%;
+}
+
+/* line 7, ../sass/layout/_grid_system.scss */
+.column-7 {
+  width: 58.33333%;
+}
+
+/* line 7, ../sass/layout/_grid_system.scss */
+.column-8 {
+  width: 66.66667%;
+}
+
+/* line 7, ../sass/layout/_grid_system.scss */
+.column-9 {
+  width: 75%;
+}
+
+/* line 7, ../sass/layout/_grid_system.scss */
+.column-10 {
+  width: 83.33333%;
+}
+
+/* line 7, ../sass/layout/_grid_system.scss */
+.column-11 {
+  width: 91.66667%;
+}
+
+/* line 7, ../sass/layout/_grid_system.scss */
+.column-12 {
+  width: 100%;
+}
+
+/* line 6, ../sass/themes/_default.scss */
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+/* line 11, ../sass/themes/_default.scss */
+body {
+  background-color: black;
+}

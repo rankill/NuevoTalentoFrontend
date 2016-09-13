@@ -32,3 +32,32 @@
   }
 }
 
+@mixin breakpoint($type, $fallback:false, $parent:true) {
+
+  @if $type == "mobile" {
+    @media (max-width: $screen_breakpoint - 1){
+      @content;
+    }
+  }
+
+
+  @if $type == "desktop"{
+   @media (min-width: $screen_breakpoint){
+      @content;
+   }
+  }
+
+  @if $fallback {
+    @if $parent {
+      .#{$fallback} & {
+        @content;
+      }
+    } @else {
+      .#{$fallback} {
+        @content;
+      }
+    }
+  }
+}
+
+

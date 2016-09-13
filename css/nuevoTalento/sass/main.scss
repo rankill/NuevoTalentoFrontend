@@ -11,6 +11,7 @@
 // 2. Vendors
 @import 'vendor/normalize';
 
+
 // 3. Base stuff
 @import 'base/base',
 'base/fonts',
@@ -18,8 +19,10 @@
 'base/helpers';
 
 // 4. Layout-related sections
-@import 'layout/header',
-'layout/footer';
+@import
+'layout/header',
+'layout/footer',
+'layout/grid_system';
 
 // 5. Components
 @import 'components/button';
