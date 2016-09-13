@@ -596,42 +596,74 @@ body {
 
 /* line 4, ../sass/layout/_header.scss */
 header {
-  height: 80px;
+  height: 94px;
 }
-/* line 7, ../sass/layout/_header.scss */
+/* line 6, ../sass/layout/_header.scss */
+header .mainMenu_callback {
+  display: none;
+}
+/* line 12, ../sass/layout/_header.scss */
 header .main_nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px 0 20px;
+  padding: 0 33px 0 18px;
   height: 100%;
-  background-color: rgba(34, 34, 34, 0.47);
-}
-/* line 15, ../sass/layout/_header.scss */
-header .main_nav .logotipo {
-  margin: 0;
+  background-color: rgba(18, 18, 22, 0.4);
 }
 /* line 20, ../sass/layout/_header.scss */
-header .main_nav .nav_menu {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+header .main_nav .logotipo {
+  margin: 0;
+  height: auto;
 }
-/* line 26, ../sass/layout/_header.scss */
-header .main_nav .nav_menu .nav_list {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
+/* line 23, ../sass/layout/_header.scss */
+header .main_nav .logotipo img {
+  max-width: 231px;
+  max-height: 58px;
 }
-/* line 31, ../sass/layout/_header.scss */
-header .main_nav .nav_menu .nav_list a {
-  text-decoration: none;
-  transition: all .5s ease;
+/* line 30, ../sass/layout/_header.scss */
+header .nav_menu {
+  display: none;
 }
-/* line 37, ../sass/layout/_header.scss */
-header .main_nav .nav_menu li {
-  display: inline-block;
+/* line 34, ../sass/layout/_header.scss */
+header .header_mobileMenu {
+  background: url("../../../assets/static/menu.png?1473788384") no-repeat;
+  height: 29px;
+  width: 30px;
+  cursor: pointer;
+  background-size: 100%;
+}
+/* line 40, ../sass/layout/_header.scss */
+header .header_mobileMenu:hover {
+  opacity: 0.8;
+}
+@media (min-width: 768px) {
+  /* line 47, ../sass/layout/_header.scss */
+  header .header_mobileMenu {
+    display: none;
+  }
+  /* line 51, ../sass/layout/_header.scss */
+  header .nav_menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  /* line 57, ../sass/layout/_header.scss */
+  header .nav_menu .nav_list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  /* line 62, ../sass/layout/_header.scss */
+  header .nav_menu .nav_list a {
+    text-decoration: none;
+    transition: all .5s ease;
+  }
+  /* line 68, ../sass/layout/_header.scss */
+  header .nav_menu li {
+    display: inline-block;
+  }
 }
 
 /* line 7, ../sass/layout/_grid_system.scss */
@@ -702,5 +734,13 @@ html, body {
 
 /* line 11, ../sass/themes/_default.scss */
 body {
-  background-color: black;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../assets/static/background.jpg?1473788384') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  /* For WebKit*/
+  -moz-background-size: cover;
+  /* Mozilla*/
+  -o-background-size: cover;
+  /* Opera*/
+  background-size: cover;
+  /* Generic*/
 }

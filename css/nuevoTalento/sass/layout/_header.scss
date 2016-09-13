@@ -2,21 +2,52 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 header {
-    height: 80px;
+
+    .mainMenu_callback{
+        display: none;
+    }
+
+    height: 94px;
 
     .main_nav {
         align-items: center;
         display: flex;
         justify-content: space-between;
-        padding: 0 20px 0 20px;
+        padding: 0 33px 0 18px;
         height: 100%;
-        background-color: rgba(34, 34, 34, 0.47);
+        background-color: rgba(18, 18, 22, 0.4);
 
         .logotipo {
             margin: 0;
+            height: auto;
+            img{
+                max-width: 231px;
+                max-height: 58px;
+            }
+        }
+    }
+
+    .nav_menu{
+        display: none;
+    }
+
+    .header_mobileMenu{
+        background: url("../../../assets/static/menu.png?1473788384") no-repeat;
+        height: 29px;
+        width: 30px;
+        cursor: pointer;
+        background-size: 100%;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+
+    @include breakpoint(desktop){
+
+        .header_mobileMenu{
+            display: none;
         }
 
-        // Content Wrapper
         .nav_menu {
             align-items: center;
             display: flex;
