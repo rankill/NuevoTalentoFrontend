@@ -3,18 +3,9 @@
 // -----------------------------------------------------------------------------
 header {
 
-    .mainMenu_callback{
-        &:checked {
-
-            body{
-                background-color: #ef6600;
-            }
-
-            //Mobile design
-            .main_nav{
-                background-color: #ef6600;
-                display: block;
-            }
+    .mainMenu_callback:checked {
+        & + .nav_menu {
+            display: block;
         }
     }
 
@@ -50,8 +41,8 @@ header {
         background: image-url("menu.png") no-repeat;
         height: 22px;
         width: 34px;
-        cursor: pointer;
         background-size: 100% 23px;
+        cursor: pointer;
         &:hover{
             opacity: 0.8;
         }
@@ -60,7 +51,8 @@ header {
     @include breakpoint(desktop){
 
         .header_mobileMenu{
-            display: none;
+            position: absolute;
+            clip: rect(0, 0, 0, 0);
         }
 
         .main_nav {

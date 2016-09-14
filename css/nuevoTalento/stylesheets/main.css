@@ -629,16 +629,11 @@ body {
 header {
   /*Mobile and defualt configuration*/
 }
-/* line 9, ../sass/layout/_header.scss */
-header .mainMenu_callback:checked body {
-  background-color: #ef6600;
-}
-/* line 14, ../sass/layout/_header.scss */
-header .mainMenu_callback:checked .main_nav {
-  background-color: #ef6600;
+/* line 7, ../sass/layout/_header.scss */
+header .mainMenu_callback:checked + .nav_menu {
   display: block;
 }
-/* line 23, ../sass/layout/_header.scss */
+/* line 14, ../sass/layout/_header.scss */
 header .main_nav {
   align-items: center;
   display: flex;
@@ -647,12 +642,12 @@ header .main_nav {
   height: 100%;
   background-color: rgba(18, 18, 22, 0.4);
 }
-/* line 31, ../sass/layout/_header.scss */
+/* line 22, ../sass/layout/_header.scss */
 header .main_nav .logotipo {
   margin: 0;
   height: auto;
 }
-/* line 34, ../sass/layout/_header.scss */
+/* line 25, ../sass/layout/_header.scss */
 header .main_nav .logotipo img {
   -webkit-transition: width 1s, height 1s;
   /* Safari */
@@ -660,51 +655,52 @@ header .main_nav .logotipo img {
   width: 179px;
   height: 37px;
 }
-/* line 44, ../sass/layout/_header.scss */
+/* line 35, ../sass/layout/_header.scss */
 header .main_nav .nav_menu {
   display: none;
 }
-/* line 49, ../sass/layout/_header.scss */
+/* line 40, ../sass/layout/_header.scss */
 header .header_mobileMenu {
-  background: url('../../../resources/assets/menu.png?1473703601') no-repeat;
+  background: url('../../../resources/assets/menu.png?1473855750') no-repeat;
   height: 22px;
   width: 34px;
-  cursor: pointer;
   background-size: 100% 23px;
+  cursor: pointer;
 }
-/* line 55, ../sass/layout/_header.scss */
+/* line 46, ../sass/layout/_header.scss */
 header .header_mobileMenu:hover {
   opacity: 0.8;
 }
 @media (min-width: 768px) {
-  /* line 62, ../sass/layout/_header.scss */
+  /* line 53, ../sass/layout/_header.scss */
   header .header_mobileMenu {
-    display: none;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
   }
-  /* line 68, ../sass/layout/_header.scss */
+  /* line 60, ../sass/layout/_header.scss */
   header .main_nav .logotipo img {
     width: 220px;
     height: 53px;
   }
-  /* line 75, ../sass/layout/_header.scss */
+  /* line 67, ../sass/layout/_header.scss */
   header .main_nav .nav_menu {
     align-items: center;
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-  /* line 81, ../sass/layout/_header.scss */
+  /* line 73, ../sass/layout/_header.scss */
   header .main_nav .nav_menu .nav_list {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
   }
-  /* line 86, ../sass/layout/_header.scss */
+  /* line 78, ../sass/layout/_header.scss */
   header .main_nav .nav_menu .nav_list a {
     text-decoration: none;
     transition: all .5s ease;
   }
-  /* line 92, ../sass/layout/_header.scss */
+  /* line 84, ../sass/layout/_header.scss */
   header .main_nav .nav_menu li {
     display: inline-block;
   }
@@ -777,8 +773,10 @@ html, body {
 }
 
 /* line 11, ../sass/themes/_default.scss */
-body {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../resources/assets/background.jpg?1473703601');
+.main_container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../resources/assets/background.jpg?1473855750');
   -webkit-background-size: cover;
   /* For WebKit*/
   -moz-background-size: cover;
@@ -790,31 +788,34 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
-/* line 24, ../sass/themes/_default.scss */
+/* MAIN SECTIONS SEPARATION HEADER AND BODY SECTION (MAIN SECTION) */
+/* line 30, ../sass/themes/_default.scss */
+header {
+  top: 0;
+  height: 6.5vw;
+  min-height: 63px;
+  overflow: hidden;
+  max-height: 100px;
+}
+
+/* line 31, ../sass/themes/_default.scss */
 header, .main_section {
   position: absolute;
   left: 0;
   width: 100%;
 }
 
-/* line 25, ../sass/themes/_default.scss */
-header {
-  top: 0;
-  height: 6.5vw;
-  min-height: 63px;
-  overflow: hidden;
-}
-
-/* line 26, ../sass/themes/_default.scss */
+/* line 32, ../sass/themes/_default.scss */
 .main_section {
   top: 94px;
   bottom: 0;
   overflow: auto;
 }
 
-/* line 30, ../sass/themes/_default.scss */
+/* line 36, ../sass/themes/_default.scss */
 .main_section .info_section {
   display: flex;
   flex-direction: column;
