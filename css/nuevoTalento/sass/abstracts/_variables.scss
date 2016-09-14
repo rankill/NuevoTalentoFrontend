@@ -20,11 +20,7 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 /// Copy text color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
-
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$text-color: rgb(255, 255, 255) !default;
 
 /// Light grey
 /// @type Color
@@ -39,37 +35,40 @@ $mid-grey: rgb(153, 153, 153) !default;
 $dark-grey: rgb(68, 68, 68) !default;
 
 
+/* Fill colors  */
 
 
+/// Main brand color
+/// @type Color
+$brand-color: #F29100 !default;
+$brand-alpha-half-color : rgba($brand-color, 0.5); //Alpha 50% of main color
+
+$linkedin_color: #007bb5;
+$facebook_color: #3B5998;
+
+$white_alpha20_color: rgba(#FFFFFF, 0.2);
+
+
+/* outline colors */
+$brand-outline-color: #ef6600;
+
+$linkedin_outline_color: #3b577f;
+$facebook_outline_color: #3b577f;
 
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
 
-
-
-
-
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
-) !default;
-
-
 /// Relative or absolute URL where all assets are served from
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '../../../assets/' !default;
+$base-url: '../../../resources/assets/' !default;
+$resources-url: '../../../resources/' !default;
 
 // grid variables
 $grid-columns: 12;
 $grid-max-width: 65em;
-
 
 //Breakpoint control
 $screen_breakpoint:768px;

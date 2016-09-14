@@ -9,10 +9,29 @@ html, body {
 }
 
 body {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), image-url("background.jpg") no-repeat center center fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), image-url("background.jpg");
     //background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://raw.githubusercontent.com/RockaLabs/frontendExercise/master/resources/wireframes/responsive1.png") no-repeat center center fixed;
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
     background-size: cover;         /* Generic*/
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+header, .main_section { position: absolute; left: 0; width: 100%; }
+header { top: 0; height: 6.5vw; min-height: 63px; overflow: hidden; }
+.main_section { top: 94px; bottom: 0; overflow: auto;}
+
+
+.main_section{
+    .info_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 33px;
+    }
 }

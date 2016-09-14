@@ -4,11 +4,22 @@
 header {
 
     .mainMenu_callback{
-        display: none;
+        &:checked {
+
+            body{
+                background-color: #ef6600;
+            }
+
+            //Mobile design
+            .main_nav{
+                background-color: #ef6600;
+                display: block;
+            }
+        }
     }
 
-    height: 94px;
 
+    /*Mobile and defualt configuration*/
     .main_nav {
         align-items: center;
         display: flex;
@@ -21,22 +32,26 @@ header {
             margin: 0;
             height: auto;
             img{
-                max-width: 231px;
-                max-height: 58px;
+                -webkit-transition: width 1s, height 1s; /* Safari */
+                transition: width 1s, height 1s;
+
+                width: 179px;
+                height: 37px;
             }
+        }
+
+
+        .nav_menu{
+            display: none;
         }
     }
 
-    .nav_menu{
-        display: none;
-    }
-
     .header_mobileMenu{
-        background: url("../../../assets/static/menu.png?1473788384") no-repeat;
-        height: 29px;
-        width: 30px;
+        background: image-url("menu.png") no-repeat;
+        height: 22px;
+        width: 34px;
         cursor: pointer;
-        background-size: 100%;
+        background-size: 100% 23px;
         &:hover{
             opacity: 0.8;
         }
@@ -48,91 +63,36 @@ header {
             display: none;
         }
 
-        .nav_menu {
-            align-items: center;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-
-            .nav_list {
-                display: flex;
-                justify-content: space-around;
-                list-style-type: none;
-
-                a {
-                    text-decoration: none;
-                    transition: all .5s ease;
+        .main_nav {
+            .logotipo {
+                img{
+                    width: 220px;
+                    height: 53px;
                 }
             }
 
-            li {
-                display: inline-block;
+
+            .nav_menu {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .nav_list {
+                    display: flex;
+                    justify-content: space-around;
+                    list-style-type: none;
+
+                    a {
+                        text-decoration: none;
+                        transition: all .5s ease;
+                    }
+                }
+
+                li {
+                    display: inline-block;
+                }
             }
         }
     }
 }
-
-// Full Navigation, including mobile menu
-//nav {
-//    ul {
-//        display: flex;
-//        justify-content: space-between;
-//        list-style-type: none;
-//        width: 50%;
-//
-//        a {
-//            text-decoration: none;
-//            transition: all .5s ease;
-//        }
-//    }
-//
-//    li  {
-//        display: inline-block;
-//    }
-//
-//    #menu-toggle {display: none;}
-//
-//    .label-toggle {display: none;}
-//
-//    .wrapper {
-//        align-items: center;
-//        display: flex;
-//        justify-content: space-between;
-//    }
-//
-//    @media screen and (max-width: 768px) {
-//        ul {
-//            display: block;
-//            height: 0;
-//            list-style-type: none;
-//            opacity: 0;
-//            text-align: center;
-//            transition: all 1s ease;
-//            width: 100%;
-//            visibility: hidden;
-//        }
-//
-//        li {
-//            display: block;
-//            font-size: 1.5em;
-//            padding: 2em 0;
-//        }
-//
-//        #menu-toggle:checked ~ ul {
-//            opacity: 1;
-//            height: 100vh;
-//            visibility: visible;
-//        }
-//
-//        .label-toggle {
-//            cursor: pointer;
-//            display: block;
-//            float: right;
-//            height: 35px;
-//            margin-top: 1em;
-//            width: 35px;
-//        }
-//
-//        .wrapper {display: block;}
-//    }
-//}

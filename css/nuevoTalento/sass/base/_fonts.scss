@@ -1,3 +1,28 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
+
+/* TITLE FONT */
+@font-face {
+    font-family: "RobotoRegular";
+    src: url($resources-url + "typography/Roboto-Regular.eot?") format("eot"),
+         url($resources-url + "typography/Roboto-Regular.woff2") format("woff2"),
+         url($resources-url + "typography/Roboto-Regular.woff") format("woff"),
+         url($resources-url + "typography/Roboto-Regular.ttf") format("truetype"),
+         url($resources-url + "typography/Roboto-Regular.svg#Roboto-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* SUBTITLE FONT */
+@font-face {
+    font-family: "RobotoThin";
+    src: url($resources-url + "typography/Roboto-Thin.eot?") format("eot"),
+         url($resources-url + "typography/Roboto-Thin.woff2") format("woff2"),
+         url($resources-url + "typography/Roboto-Thin.woff") format("woff"),
+         url($resources-url + "typography/Roboto-Thin.ttf") format("truetype"),
+         url($resources-url + "typography/Roboto-Thin.svg#Roboto-Thin") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
