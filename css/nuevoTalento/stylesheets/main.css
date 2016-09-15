@@ -784,12 +784,12 @@ header .close_nav_header {
 }
 /* line 16, ../sass/components/_hamburger_menu.scss */
 .hamburger_menu.open {
-  background: url('../../../resources/assets/menu.png?1473703601') no-repeat;
+  background: url('../../../resources/assets/menu.png?1473855750') no-repeat;
   background-size: 100% 23px;
 }
 /* line 21, ../sass/components/_hamburger_menu.scss */
 .hamburger_menu.close {
-  background: url('../../../resources/assets/close.png?1473703601') no-repeat;
+  background: url('../../../resources/assets/close.png?1473855750') no-repeat;
   background-size: 28px 100%;
 }
 /* line 26, ../sass/components/_hamburger_menu.scss */
@@ -935,16 +935,15 @@ header, .body_section {
   width: 100%;
   height: 100%;
   /* Full screen background */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../resources/assets/background.jpg?1473703601');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../resources/assets/background.jpg?1473855750');
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  overflow: hidden;
 }
-/* line 63, ../sass/themes/_default.scss */
+/* line 61, ../sass/themes/_default.scss */
 .main_section .body_section .info_section {
   display: flex;
   flex-direction: column;
