@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the hamburger menu.
+// -----------------------------------------------------------------------------
+
+
+.navMenu_callback{
+    display: none;
+}
+
+.hamburger_menu{
+    height: 22px;
+    width: 34px;
+    cursor: pointer;
+    float: right;
+
+    &.open{
+        background: image-url('menu.png') no-repeat;
+        background-size: 100% 23px;
+    }
+
+    &.close{
+        background: image_url('close.png') no-repeat;
+        background-size: 28px 100%;
+    }
+
+    &:hover{
+        opacity: 0.8;
+    }
+
+    @include breakpoint(desktop){
+        display: none;
+    }
+}

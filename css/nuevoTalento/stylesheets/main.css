@@ -1,5 +1,9 @@
 /* Fill colors  */
 /* outline colors */
+/* NAV STYLES, DESKTOP AND MOBILE  */
+/* NAV DESKTOP  */
+/* NAV DESKTOP  */
+/* NAV STYLES, DESKTOP AND MOBILE  */
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -505,15 +509,20 @@ html {
  * making all elements inheriting from the root box-sizing value
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
-/* line 18, ../sass/base/_base.scss */
+/* line 20, ../sass/base/_base.scss */
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+/* line 24, ../sass/base/_base.scss */
+ul, li {
+  list-style: none;
 }
 
 /**
  * Basic styles for links
  */
-/* line 25, ../sass/base/_base.scss */
+/* line 31, ../sass/base/_base.scss */
 a {
   color: #F29100;
   text-decoration: none;
@@ -524,7 +533,7 @@ a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 
-/* line 35, ../sass/base/_base.scss */
+/* line 41, ../sass/base/_base.scss */
 .title {
   text-align: center;
   font-family: 'RobotoRegular', sans-serif;
@@ -532,7 +541,7 @@ a:hover, a:active, a:focus {
   font-style: normal;
 }
 
-/* line 42, ../sass/base/_base.scss */
+/* line 48, ../sass/base/_base.scss */
 .sub_title {
   text-align: center;
   font-family: 'RobotoThin', sans-serif;
@@ -627,14 +636,6 @@ body {
 
 /* line 4, ../sass/layout/_header.scss */
 header {
-  /*Mobile and defualt configuration*/
-}
-/* line 7, ../sass/layout/_header.scss */
-header .mainMenu_callback:checked + .nav_menu {
-  display: block;
-}
-/* line 14, ../sass/layout/_header.scss */
-header .main_nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -642,67 +643,70 @@ header .main_nav {
   height: 100%;
   background-color: rgba(18, 18, 22, 0.4);
 }
-/* line 22, ../sass/layout/_header.scss */
-header .main_nav .logotipo {
+/* line 12, ../sass/layout/_header.scss */
+header .logotipo {
   margin: 0;
   height: auto;
 }
-/* line 25, ../sass/layout/_header.scss */
-header .main_nav .logotipo img {
+/* line 15, ../sass/layout/_header.scss */
+header .logotipo img {
   -webkit-transition: width 1s, height 1s;
   /* Safari */
   transition: width 1s, height 1s;
   width: 179px;
   height: 37px;
 }
-/* line 35, ../sass/layout/_header.scss */
-header .main_nav .nav_menu {
-  display: none;
-}
-/* line 40, ../sass/layout/_header.scss */
-header .header_mobileMenu {
-  background: url('../../../resources/assets/menu.png?1473855750') no-repeat;
-  height: 22px;
-  width: 34px;
-  background-size: 100% 23px;
-  cursor: pointer;
-}
-/* line 46, ../sass/layout/_header.scss */
-header .header_mobileMenu:hover {
-  opacity: 0.8;
-}
 @media (min-width: 768px) {
-  /* line 53, ../sass/layout/_header.scss */
-  header .header_mobileMenu {
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
-  }
-  /* line 60, ../sass/layout/_header.scss */
-  header .main_nav .logotipo img {
+  /* line 15, ../sass/layout/_header.scss */
+  header .logotipo img {
     width: 220px;
     height: 53px;
   }
-  /* line 67, ../sass/layout/_header.scss */
-  header .main_nav .nav_menu {
+}
+/* line 29, ../sass/layout/_header.scss */
+header .nav_menu {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 29, ../sass/layout/_header.scss */
+  header .nav_menu {
     align-items: center;
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-  /* line 73, ../sass/layout/_header.scss */
-  header .main_nav .nav_menu .nav_list {
+  /* line 119, ../sass/abstracts/_mixins.scss */
+  header .nav_menu .nav_list {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
   }
-  /* line 78, ../sass/layout/_header.scss */
-  header .main_nav .nav_menu .nav_list a {
+  /* line 124, ../sass/abstracts/_mixins.scss */
+  header .nav_menu .nav_list a {
     text-decoration: none;
     transition: all .5s ease;
   }
-  /* line 84, ../sass/layout/_header.scss */
-  header .main_nav .nav_menu li {
+  /* line 130, ../sass/abstracts/_mixins.scss */
+  header .nav_menu li {
     display: inline-block;
+  }
+}
+/* line 36, ../sass/layout/_header.scss */
+header .close_nav_header {
+  height: 71px;
+  min-height: 63px;
+  background-color: rgba(116, 116, 117, 0.81);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  padding: 0 27px;
+}
+@media (min-width: 768px) {
+  /* line 36, ../sass/layout/_header.scss */
+  header .close_nav_header {
+    display: none;
   }
 }
 
@@ -766,33 +770,47 @@ header .header_mobileMenu:hover {
   width: 100%;
 }
 
+/* line 6, ../sass/components/_hamburger_menu.scss */
+.navMenu_callback {
+  display: none;
+}
+
+/* line 10, ../sass/components/_hamburger_menu.scss */
+.hamburger_menu {
+  height: 22px;
+  width: 34px;
+  cursor: pointer;
+  float: right;
+}
+/* line 16, ../sass/components/_hamburger_menu.scss */
+.hamburger_menu.open {
+  background: url('../../../resources/assets/menu.png?1473703601') no-repeat;
+  background-size: 100% 23px;
+}
+/* line 21, ../sass/components/_hamburger_menu.scss */
+.hamburger_menu.close {
+  background: url('../../../resources/assets/close.png?1473703601') no-repeat;
+  background-size: 28px 100%;
+}
+/* line 26, ../sass/components/_hamburger_menu.scss */
+.hamburger_menu:hover {
+  opacity: 0.8;
+}
+@media (min-width: 768px) {
+  /* line 10, ../sass/components/_hamburger_menu.scss */
+  .hamburger_menu {
+    display: none;
+  }
+}
+
 /* line 6, ../sass/themes/_default.scss */
 html, body {
   margin: 0;
   height: 100%;
 }
 
-/* line 11, ../sass/themes/_default.scss */
-.main_container {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../resources/assets/background.jpg?1473855750');
-  -webkit-background-size: cover;
-  /* For WebKit*/
-  -moz-background-size: cover;
-  /* Mozilla*/
-  -o-background-size: cover;
-  /* Opera*/
-  background-size: cover;
-  /* Generic*/
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  overflow: hidden;
-}
-
 /* MAIN SECTIONS SEPARATION HEADER AND BODY SECTION (MAIN SECTION) */
-/* line 30, ../sass/themes/_default.scss */
+/* line 12, ../sass/themes/_default.scss */
 header {
   top: 0;
   height: 6.5vw;
@@ -801,22 +819,133 @@ header {
   max-height: 100px;
 }
 
-/* line 31, ../sass/themes/_default.scss */
-header, .main_section {
+/* line 13, ../sass/themes/_default.scss */
+header, .body_section {
   position: absolute;
   left: 0;
   width: 100%;
 }
 
-/* line 32, ../sass/themes/_default.scss */
-.main_section {
+/* line 14, ../sass/themes/_default.scss */
+.body_section {
   top: 94px;
   bottom: 0;
   overflow: auto;
 }
 
-/* line 36, ../sass/themes/_default.scss */
-.main_section .info_section {
+/*******************************************************************/
+/*Hamburger personalized behavior for the default view, base is in -> _hamburger_menu.scss*/
+/* line 20, ../sass/themes/_default.scss */
+.navMenu_callback:checked ~ .main_section {
+  position: relative;
+  right: 300px;
+  opacity: 0.8;
+}
+@media (min-width: 768px) {
+  /* line 20, ../sass/themes/_default.scss */
+  .navMenu_callback:checked ~ .main_section {
+    right: 0;
+    opacity: 1;
+  }
+  /* line 25, ../sass/themes/_default.scss */
+  .navMenu_callback:checked ~ .main_section .nav_menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  /* line 119, ../sass/abstracts/_mixins.scss */
+  .navMenu_callback:checked ~ .main_section .nav_menu .nav_list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  /* line 124, ../sass/abstracts/_mixins.scss */
+  .navMenu_callback:checked ~ .main_section .nav_menu .nav_list a {
+    text-decoration: none;
+    transition: all .5s ease;
+  }
+  /* line 130, ../sass/abstracts/_mixins.scss */
+  .navMenu_callback:checked ~ .main_section .nav_menu li {
+    display: inline-block;
+  }
+}
+/* line 35, ../sass/themes/_default.scss */
+.navMenu_callback:checked ~ .main_section .nav_menu {
+  font-family: 'RobotoRegular', sans-serif;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  position: fixed;
+  flex-direction: column-reverse;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 49;
+  width: 300px;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+/* line 79, ../sass/abstracts/_mixins.scss */
+.navMenu_callback:checked ~ .main_section .nav_menu .nav_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: cadetblue;
+  height: 100%;
+  padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  overflow: auto;
+}
+/* line 91, ../sass/abstracts/_mixins.scss */
+.navMenu_callback:checked ~ .main_section .nav_menu .nav_item {
+  border-bottom: 1px solid #dddddd;
+  min-height: 63px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 26px;
+  color: #444444;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 102, ../sass/abstracts/_mixins.scss */
+.navMenu_callback:checked ~ .main_section .nav_menu .nav_item.nav-login {
+  color: #ef6600;
+  border-bottom: 3px solid #ef6600;
+}
+/* line 105, ../sass/abstracts/_mixins.scss */
+.navMenu_callback:checked ~ .main_section .nav_menu .nav_item.nav-login:hover {
+  color: rgba(255, 255, 255, 0.2);
+}
+/* line 110, ../sass/abstracts/_mixins.scss */
+.navMenu_callback:checked ~ .main_section .nav_menu .nav_item:hover {
+  background-color: rgba(242, 145, 0, 0.5);
+}
+
+/* line 46, ../sass/themes/_default.scss */
+.main_section {
+  -moz-transition: right 0.3s ease 0s;
+  -o-transition: right 0.3s ease 0s;
+  -webkit-transition: right 0.3s ease;
+  -webkit-transition-delay: 0s;
+  transition: right 0.3s ease 0s;
+  position: relative;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  /* Full screen background */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../resources/assets/background.jpg?1473703601');
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  overflow: hidden;
+}
+/* line 63, ../sass/themes/_default.scss */
+.main_section .body_section .info_section {
   display: flex;
   flex-direction: column;
   justify-content: center;

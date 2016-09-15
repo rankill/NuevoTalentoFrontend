@@ -6,14 +6,19 @@
 
 (function(undefined) {
     'use strict';
-    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function toggleMobileMenu() {
-        var x = document.getElementById("nav_menu");
-       if(x.className.indexOf('open_menu') > -1){
-           x.classList.add('wait');
-       }
+    /**
+     * Event to check if the nav menu in phone is clicked outside and hide that menu
+     */
 
-        x.className += " responsive";
+    var currentNav = document.getElementById('nav_menu');
+    var openCloseNavTrigger = document.getElementById("navMenu_callback");
 
-    }
+    document.addEventListener('mousedown', function(event) {
+        if(openCloseNavTrigger.checked) {
+            var isClickInside = currentNav.contains(event.target);
+            if (!isClickInside) {
+                openCloseNavTrigger.checked = false;
+            }
+        }
+    });
 }());

@@ -8,36 +8,64 @@ html, body {
     height: 100%;
 }
 
-.main_container {
-    width: 100%;
-    height: 100%;
+/* MAIN SECTIONS SEPARATION HEADER AND BODY SECTION (MAIN SECTION) */
+header { top: 0; height: 6.5vw; min-height: 63px; overflow: hidden; max-height: 100px;}
+header, .body_section { position: absolute; left: 0; width: 100%; }
+.body_section { top: 94px; bottom: 0; overflow: auto;}
+/*******************************************************************/
 
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), image-url("background.jpg");
-    //background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://raw.githubusercontent.com/RockaLabs/frontendExercise/master/resources/wireframes/responsive1.png") no-repeat center center fixed;
-    -webkit-background-size: cover; /* For WebKit*/
-    -moz-background-size: cover;    /* Mozilla*/
-    -o-background-size: cover;      /* Opera*/
-    background-size: cover;         /* Generic*/
+/*Hamburger personalized behavior for the default view, base is in -> _hamburger_menu.scss*/
+.navMenu_callback {
+    &:checked {
+        ~ .main_section {
+            @include breakpoint(desktop){
+                right: 0;
+                opacity: 1;
 
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: fixed;
-    overflow: hidden;
+                .nav_menu {
+                    @include get-nav-from-type(desktop);
+                }
+            }
+
+
+            position: relative;
+            right: 300px;
+            opacity: 0.8;
+
+            .nav_menu {
+                @include get-nav-from-type(phone);
+
+            }
+        }
+    }
 }
 
 
-/* MAIN SECTIONS SEPARATION HEADER AND BODY SECTION (MAIN SECTION) */
-header { top: 0; height: 6.5vw; min-height: 63px; overflow: hidden; max-height: 100px;}
-header, .main_section { position: absolute; left: 0; width: 100%; }
-.main_section { top: 94px; bottom: 0; overflow: auto;}
 
 
-.main_section{
-    .info_section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 33px;
+.main_section {
+    @include single-transition(right, .3s, ease, 0s);
+    position: relative;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+
+    /* Full screen background */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), image-url("background.jpg");
+    @include background-size(cover);
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+
+
+    .body_section {
+        .info_section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 33px;
+        }
     }
 }

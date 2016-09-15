@@ -71,4 +71,9 @@ $grid-columns: 12;
 $grid-max-width: 65em;
 
 //Breakpoint control
-$screen_breakpoint:768px;
+$default-breakpoint: root;
+$current-breakpoint: $default-breakpoint;
+$breakpoints: (
+    "phone"  : 0px,
+    "desktop" : 768px
+);

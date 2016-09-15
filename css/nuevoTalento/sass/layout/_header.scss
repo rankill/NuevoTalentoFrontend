@@ -2,89 +2,49 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 33px 0 18px;
+    height: 100%;
+    background-color: rgba(18, 18, 22, 0.4);
 
-    .mainMenu_callback:checked {
-        & + .nav_menu {
-            display: block;
+    .logotipo {
+        margin: 0;
+        height: auto;
+        img{
+            -webkit-transition: width 1s, height 1s; /* Safari */
+            transition: width 1s, height 1s;
+
+            width: 179px;
+            height: 37px;
+
+            @include breakpoint(desktop){
+                width: 220px;
+                height: 53px;
+            }
         }
     }
 
+    .nav_menu {
+        display: none;
+        @include breakpoint(desktop) {
+            @include get-nav-from-type(desktop);
+        }
+    }
 
-    /*Mobile and defualt configuration*/
-    .main_nav {
-        align-items: center;
+    .close_nav_header{
+        height: 71px;
+        min-height: 63px;
+        background-color: rgba(116, 116, 117, 0.81);
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        padding: 0 33px 0 18px;
-        height: 100%;
-        background-color: rgba(18, 18, 22, 0.4);
-
-        .logotipo {
-            margin: 0;
-            height: auto;
-            img{
-                -webkit-transition: width 1s, height 1s; /* Safari */
-                transition: width 1s, height 1s;
-
-                width: 179px;
-                height: 37px;
-            }
-        }
-
-
-        .nav_menu{
+        align-items: center;
+        font-size: 22px;
+        padding: 0 27px;
+        @include breakpoint(desktop){
             display: none;
-        }
-    }
-
-    .header_mobileMenu{
-        background: image-url("menu.png") no-repeat;
-        height: 22px;
-        width: 34px;
-        background-size: 100% 23px;
-        cursor: pointer;
-        &:hover{
-            opacity: 0.8;
-        }
-    }
-
-    @include breakpoint(desktop){
-
-        .header_mobileMenu{
-            position: absolute;
-            clip: rect(0, 0, 0, 0);
-        }
-
-        .main_nav {
-            .logotipo {
-                img{
-                    width: 220px;
-                    height: 53px;
-                }
-            }
-
-
-            .nav_menu {
-                align-items: center;
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-
-                .nav_list {
-                    display: flex;
-                    justify-content: space-around;
-                    list-style-type: none;
-
-                    a {
-                        text-decoration: none;
-                        transition: all .5s ease;
-                    }
-                }
-
-                li {
-                    display: inline-block;
-                }
-            }
         }
     }
 }
