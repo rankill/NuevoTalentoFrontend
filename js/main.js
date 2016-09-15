@@ -13,12 +13,16 @@
     var currentNav = document.getElementById('nav_menu');
     var openCloseNavTrigger = document.getElementById("navMenu_callback");
 
-    document.addEventListener('mousedown', function(event) {
-        if(openCloseNavTrigger.checked) {
-            var isClickInside = currentNav.contains(event.target);
-            if (!isClickInside) {
-                openCloseNavTrigger.checked = false;
+    ("mousedown touchstart".split(" ")).forEach(function(e){
+        window.addEventListener(e,function( event ) {
+            console.warn(event.target)
+            if(openCloseNavTrigger.checked) {
+                var isClickInside = currentNav.contains(event.target);
+                if (!isClickInside) {
+                    openCloseNavTrigger.checked = false;
+                }
             }
-        }
+        },false);
     });
+
 }());
