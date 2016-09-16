@@ -42,10 +42,15 @@
         // Update `$current-breakpoint`
         $current-breakpoint: $breakpoint !global;
 
-        // Open a media query block
-        @media (min-width: $value ) {
-            // Let the user dump content
-            @content;
+        @if $breakpoint == "phone" {
+            @media (max-width: $value){
+                @content;
+            }
+        }
+        @else if $breakpoint == "desktop"{
+            @media (min-width: $value){
+                @content;
+            }
         }
 
         // Then reset `$current-breakpoint` to `$default-breakpoint` (root)
@@ -63,73 +68,9 @@
 /* NAV STYLES, DESKTOP AND MOBILE  */
 @mixin get-nav-from-type($navType:'phone'){
     @if $navType == 'phone' {
-        font-family: 'RobotoRegular', sans-serif;
-        background-color: $white_alpha20_color;
-        display: flex;
-        position: fixed;
-        flex-direction: column-reverse;
-        top: 0;
-        right: 0;
-        height: 100%;
-        z-index: 49;
-        width: 300px;
-        justify-content: flex-start;
-        padding-left: 0;
 
-        .nav_list {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            color: cadetblue;
-            height: 100%;
-            padding: 0;
-            -webkit-margin-before: 0;
-            -webkit-margin-after: 0;
-            overflow: auto;
-        }
-
-        .nav_item {
-            border-bottom: 1px solid lighten($dark-grey, 60%);
-            min-height: 63px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding-left: 26px;
-            color: #444444;
-            text-transform: uppercase;
-            text-decoration: none;
-
-            &.nav-login {
-                color: $brand-outline-color;
-                border-bottom: 3px solid $brand-outline-color;
-                &:hover{
-                    color: $white_alpha20_color;
-                }
-            }
-
-            &:hover{
-                background-color: $brand-alpha-half-color;
-            }
-        }
     }@else {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        .nav_list {
-            display: flex;
-            justify-content: space-around;
-            list-style-type: none;
 
-            a {
-                text-decoration: none;
-                transition: all .5s ease;
-            }
-        }
-
-        li {
-            display: inline-block;
-        }
     }
 }
 

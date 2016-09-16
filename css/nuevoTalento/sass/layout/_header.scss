@@ -5,37 +5,185 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 0 33px 0 18px;
+    padding-left: 8px;
     height: 100%;
     background-color: rgba(18, 18, 22, 0.4);
+
+    @include single-transition(padding-left, .5s, ease, 0s);
+
 
     .logotipo {
         margin: 0;
         height: auto;
-        img{
-            -webkit-transition: width 1s, height 1s; /* Safari */
-            transition: width 1s, height 1s;
 
-            width: 179px;
+        @include breakpoint(desktop){
+            width: 23%;
+            display: flex;
+            justify-content: center;
+        }
+
+        img{
+            @include transition(width 1s, height 1s);
+
+            width: 142px;
             height: 37px;
 
             @include breakpoint(desktop){
-                width: 220px;
-                height: 53px;
+                width: 16vw;
+                height: 4vw;
             }
         }
     }
 
     .nav_menu {
-        display: none;
+        @include single-transition(right, .3s, ease, 0s);
+
+        display: flex;
+
+        font-family: 'RobotoRegular', sans-serif;
+
+        .nav_list{
+            display: flex;
+        }
+
+
+        @include breakpoint(phone){
+            background-color: $white_alpha20_color;
+
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+
+            position: fixed;
+            right: -300px;
+            top: 0;
+
+            height: 100%;
+            width: 300px;
+
+            z-index: 49;
+
+            padding-left: 0;
+
+            .nav_list {
+                flex-direction: column;
+                justify-content: flex-start;
+
+                color: cadetblue;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+
+                overflow: auto;
+
+                .nav_list_wrapper {
+                    border-bottom: 1px solid lighten($dark-grey, 60%);
+
+                    .nav_subitems {
+                        padding-left: 26px;
+
+                        li{
+                            color: gray;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+
+            .nav_item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                min-height: 56px;
+                height: 56px;
+
+                padding-left: 26px;
+
+                color: #444444;
+
+                text-transform: uppercase;
+                text-decoration: none;
+
+                &.nav_login {
+                    color: $brand-outline-color;
+                    border-bottom: 3px solid $brand-outline-color;
+                    height: 68px;
+
+                    &:hover{
+                        color: $white_alpha20_color;
+                    }
+                }
+
+                &:hover{
+                    background-color: $brand-alpha-half-color;
+                }
+            }
+        }
+
         @include breakpoint(desktop) {
-            @include get-nav-from-type(desktop);
+            align-items: center;
+
+            width: 77%;
+            height: 100%;
+
+            text-transform: uppercase;
+            font-size: 1.2vw;
+
+            .nav_login{
+                border: 1px solid white;
+                border-radius: 4px;
+                text-decoration: none;
+                max-height: 251px;
+                padding: 1vw;
+                position: absolute;
+                right: 48px;
+            }
+
+            .nav_list {
+                justify-content: space-around;
+
+                width: 65%;
+
+                padding: 0;
+                margin: 0;
+
+                .nav_list_wrapper {
+
+                    .nav_subitems {
+
+                        background-color: rgba(222, 222, 222, 0.95);
+
+                        position: absolute;
+                        top: 5vw;
+
+                        z-index: 1;
+                        margin: 0;
+                        text-transform: capitalize;
+                        box-shadow: 0 0 9px #737171;
+                        padding: 0;
+                        width: auto;
+
+                        a {
+                            height: 38px;
+                            border-bottom: 1px solid rgba(117, 117, 117, 0.16);
+                            display: flex;
+                            align-items: center;
+                            padding: 0 23px;
+
+                            li {
+                                color: rgb(111, 111, 111)
+                            }
+
+                        }
+
+                    }
+                }
+            }
         }
     }
 
     .close_nav_header{
-        height: 71px;
-        min-height: 63px;
+        height: 54px;
         background-color: rgba(116, 116, 117, 0.81);
         display: flex;
         flex-direction: row;
@@ -43,6 +191,7 @@ header {
         align-items: center;
         font-size: 22px;
         padding: 0 27px;
+        min-height: 54px;
         @include breakpoint(desktop){
             display: none;
         }

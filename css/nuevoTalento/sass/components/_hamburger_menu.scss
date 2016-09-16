@@ -8,22 +8,21 @@
 }
 
 .hamburger_menu{
-    height: 22px;
-    width: 34px;
+    height: 18px;
+    width: 18px;
     cursor: pointer;
-
-    top: 21px;
-    right: 33px;
+    top: 20px;
+    right: 19px;
     position: absolute;
 
     &.open{
         background: preload-img('menu.png') no-repeat;
-        background-size: 100% 23px;
+        background-size: 100% 18px;
     }
 
     &.close{
         background: preload-img('close.png') no-repeat;
-        background-size: 28px 100%;
+        background-size: 18px 100%;
     }
 
     &:hover{

@@ -1,3 +1,15 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+[class*='btn']{
+    width: 12%;
+    border: 1px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn_login{
+    max-height: 251px;
+    padding: 1vw;
+}

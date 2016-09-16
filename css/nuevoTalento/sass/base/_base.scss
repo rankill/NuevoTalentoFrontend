@@ -18,22 +18,23 @@ html {
  */
 *, *::before, *::after {
     box-sizing: inherit;
+    color: $text-color;
 }
 
 ul, li{
     list-style: none;
+    text-decoration: none;
 }
 
 /**
  * Basic styles for links
  */
 a {
-    color: $brand-color;
     text-decoration: none;
 
     @include on-event {
         color: $text-color;
-        text-decoration: underline;
+        opacity: 0.8;
     }
 }
 

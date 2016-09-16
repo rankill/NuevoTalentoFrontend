@@ -512,28 +512,29 @@ html {
 /* line 19, ../sass/base/_base.scss */
 *, *::before, *::after {
   box-sizing: inherit;
+  color: white;
 }
 
-/* line 23, ../sass/base/_base.scss */
+/* line 24, ../sass/base/_base.scss */
 ul, li {
   list-style: none;
+  text-decoration: none;
 }
 
 /**
  * Basic styles for links
  */
-/* line 30, ../sass/base/_base.scss */
+/* line 32, ../sass/base/_base.scss */
 a {
-  color: #F29100;
   text-decoration: none;
 }
 /* line 18, ../sass/abstracts/_mixins.scss */
 a:hover, a:active, a:focus {
   color: white;
-  text-decoration: underline;
+  opacity: 0.8;
 }
 
-/* line 40, ../sass/base/_base.scss */
+/* line 41, ../sass/base/_base.scss */
 .title {
   text-align: center;
   font-family: 'RobotoRegular', sans-serif;
@@ -541,7 +542,7 @@ a:hover, a:active, a:focus {
   font-style: normal;
 }
 
-/* line 47, ../sass/base/_base.scss */
+/* line 48, ../sass/base/_base.scss */
 .sub_title {
   text-align: center;
   font-family: 'RobotoThin', sans-serif;
@@ -639,62 +640,176 @@ header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0 33px 0 18px;
+  padding-left: 8px;
   height: 100%;
   background-color: rgba(18, 18, 22, 0.4);
+  -moz-transition: padding-left 0.5s ease 0s;
+  -o-transition: padding-left 0.5s ease 0s;
+  -webkit-transition: padding-left 0.5s ease;
+  -webkit-transition-delay: 0s;
+  transition: padding-left 0.5s ease 0s;
 }
-/* line 12, ../sass/layout/_header.scss */
+/* line 15, ../sass/layout/_header.scss */
 header .logotipo {
   margin: 0;
   height: auto;
 }
-/* line 15, ../sass/layout/_header.scss */
+@media (min-width: 768px) {
+  /* line 15, ../sass/layout/_header.scss */
+  header .logotipo {
+    width: 23%;
+    display: flex;
+    justify-content: center;
+  }
+}
+/* line 25, ../sass/layout/_header.scss */
 header .logotipo img {
+  -moz-transition: width 1s, height 1s;
+  -o-transition: width 1s, height 1s;
   -webkit-transition: width 1s, height 1s;
-  /* Safari */
   transition: width 1s, height 1s;
-  width: 179px;
+  width: 142px;
   height: 37px;
 }
-@media (min-width: 770px) {
-  /* line 15, ../sass/layout/_header.scss */
+@media (min-width: 768px) {
+  /* line 25, ../sass/layout/_header.scss */
   header .logotipo img {
-    width: 220px;
-    height: 53px;
+    width: 16vw;
+    height: 4vw;
   }
 }
-/* line 29, ../sass/layout/_header.scss */
+/* line 38, ../sass/layout/_header.scss */
 header .nav_menu {
-  display: none;
+  -moz-transition: right 0.3s ease 0s;
+  -o-transition: right 0.3s ease 0s;
+  -webkit-transition: right 0.3s ease;
+  -webkit-transition-delay: 0s;
+  transition: right 0.3s ease 0s;
+  display: flex;
+  font-family: 'RobotoRegular', sans-serif;
 }
-@media (min-width: 770px) {
-  /* line 29, ../sass/layout/_header.scss */
+/* line 45, ../sass/layout/_header.scss */
+header .nav_menu .nav_list {
+  display: flex;
+}
+@media (max-width: 767px) {
+  /* line 38, ../sass/layout/_header.scss */
+  header .nav_menu {
+    background-color: rgba(255, 255, 255, 0.2);
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    z-index: 49;
+    padding-left: 0;
+  }
+  /* line 67, ../sass/layout/_header.scss */
+  header .nav_menu .nav_list {
+    flex-direction: column;
+    justify-content: flex-start;
+    color: cadetblue;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+  }
+  /* line 78, ../sass/layout/_header.scss */
+  header .nav_menu .nav_list .nav_list_wrapper {
+    border-bottom: 1px solid #dddddd;
+  }
+  /* line 81, ../sass/layout/_header.scss */
+  header .nav_menu .nav_list .nav_list_wrapper .nav_subitems {
+    padding-left: 26px;
+  }
+  /* line 84, ../sass/layout/_header.scss */
+  header .nav_menu .nav_list .nav_list_wrapper .nav_subitems li {
+    color: gray;
+    height: 40px;
+  }
+  /* line 92, ../sass/layout/_header.scss */
+  header .nav_menu .nav_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 56px;
+    height: 56px;
+    padding-left: 26px;
+    color: #444444;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  /* line 107, ../sass/layout/_header.scss */
+  header .nav_menu .nav_item.nav_login {
+    color: #ef6600;
+    border-bottom: 3px solid #ef6600;
+    height: 68px;
+  }
+  /* line 112, ../sass/layout/_header.scss */
+  header .nav_menu .nav_item.nav_login:hover {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  /* line 117, ../sass/layout/_header.scss */
+  header .nav_menu .nav_item:hover {
+    background-color: rgba(242, 145, 0, 0.5);
+  }
+}
+@media (min-width: 768px) {
+  /* line 38, ../sass/layout/_header.scss */
   header .nav_menu {
     align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    width: 77%;
+    height: 100%;
+    text-transform: uppercase;
+    font-size: 1.2vw;
   }
-  /* line 119, ../sass/abstracts/_mixins.scss */
-  header .nav_menu .nav_list {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-  }
-  /* line 124, ../sass/abstracts/_mixins.scss */
-  header .nav_menu .nav_list a {
+  /* line 132, ../sass/layout/_header.scss */
+  header .nav_menu .nav_login {
+    border: 1px solid white;
+    border-radius: 4px;
     text-decoration: none;
-    transition: all .5s ease;
+    max-height: 251px;
+    padding: 1vw;
+    position: absolute;
+    right: 48px;
   }
-  /* line 130, ../sass/abstracts/_mixins.scss */
-  header .nav_menu li {
-    display: inline-block;
+  /* line 142, ../sass/layout/_header.scss */
+  header .nav_menu .nav_list {
+    justify-content: space-around;
+    width: 65%;
+    padding: 0;
+    margin: 0;
+  }
+  /* line 152, ../sass/layout/_header.scss */
+  header .nav_menu .nav_list .nav_list_wrapper .nav_subitems {
+    background-color: rgba(222, 222, 222, 0.95);
+    position: absolute;
+    top: 5vw;
+    z-index: 1;
+    margin: 0;
+    text-transform: capitalize;
+    box-shadow: 0 0 9px #737171;
+    padding: 0;
+    width: auto;
+  }
+  /* line 166, ../sass/layout/_header.scss */
+  header .nav_menu .nav_list .nav_list_wrapper .nav_subitems a {
+    height: 38px;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.16);
+    display: flex;
+    align-items: center;
+    padding: 0 23px;
+  }
+  /* line 173, ../sass/layout/_header.scss */
+  header .nav_menu .nav_list .nav_list_wrapper .nav_subitems a li {
+    color: #6f6f6f;
   }
 }
-/* line 36, ../sass/layout/_header.scss */
+/* line 185, ../sass/layout/_header.scss */
 header .close_nav_header {
-  height: 71px;
-  min-height: 63px;
+  height: 54px;
   background-color: rgba(116, 116, 117, 0.81);
   display: flex;
   flex-direction: row;
@@ -702,9 +817,10 @@ header .close_nav_header {
   align-items: center;
   font-size: 22px;
   padding: 0 27px;
+  min-height: 54px;
 }
-@media (min-width: 770px) {
-  /* line 36, ../sass/layout/_header.scss */
+@media (min-width: 768px) {
+  /* line 185, ../sass/layout/_header.scss */
   header .close_nav_header {
     display: none;
   }
@@ -770,6 +886,20 @@ header .close_nav_header {
   width: 100%;
 }
 
+/* line 5, ../sass/components/_button.scss */
+[class*='btn'] {
+  width: 12%;
+  border: 1px solid white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* line 12, ../sass/components/_button.scss */
+.btn_login {
+  max-height: 251px;
+  padding: 1vw;
+}
+
 /* line 6, ../sass/components/_hamburger_menu.scss */
 .navMenu_callback {
   display: none;
@@ -777,26 +907,28 @@ header .close_nav_header {
 
 /* line 10, ../sass/components/_hamburger_menu.scss */
 .hamburger_menu {
-  height: 22px;
-  width: 34px;
+  height: 18px;
+  width: 18px;
   cursor: pointer;
-  float: right;
+  top: 20px;
+  right: 19px;
+  position: absolute;
 }
-/* line 16, ../sass/components/_hamburger_menu.scss */
+/* line 18, ../sass/components/_hamburger_menu.scss */
 .hamburger_menu.open {
   background: url('../../../resources/assets/menu.png?1473703601') no-repeat;
-  background-size: 100% 23px;
+  background-size: 100% 18px;
 }
-/* line 21, ../sass/components/_hamburger_menu.scss */
+/* line 23, ../sass/components/_hamburger_menu.scss */
 .hamburger_menu.close {
   background: url('../../../resources/assets/close.png?1473703601') no-repeat;
-  background-size: 28px 100%;
+  background-size: 18px 100%;
 }
-/* line 26, ../sass/components/_hamburger_menu.scss */
+/* line 28, ../sass/components/_hamburger_menu.scss */
 .hamburger_menu:hover {
   opacity: 0.8;
 }
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   /* line 10, ../sass/components/_hamburger_menu.scss */
   .hamburger_menu {
     display: none;
@@ -812,7 +944,6 @@ html, body {
 /* line 12, ../sass/themes/_default.scss */
 body:after {
   display: none;
-  content: url('../../../resources/assets/close.png?1473703601');
 }
 
 /* MAIN SECTIONS SEPARATION HEADER AND BODY SECTION (MAIN SECTION) */
@@ -820,116 +951,47 @@ body:after {
 header {
   top: 0;
   height: 6.5vw;
-  min-height: 63px;
+  min-height: 54px;
   overflow: hidden;
-  max-height: 100px;
+  max-height: 82px;
 }
 
-/* line 21, ../sass/themes/_default.scss */
+/* line 28, ../sass/themes/_default.scss */
 header, .body_section {
-  position: absolute;
   left: 0;
   width: 100%;
 }
 
-/* line 22, ../sass/themes/_default.scss */
+/* line 29, ../sass/themes/_default.scss */
 .body_section {
-  top: 94px;
+  position: absolute;
+  top: 63px;
   bottom: 0;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /*******************************************************************/
 /*Hamburger personalized behavior for the default view, base is in -> _hamburger_menu.scss*/
-/* line 28, ../sass/themes/_default.scss */
+/* line 35, ../sass/themes/_default.scss */
 .navMenu_callback:checked ~ .main_section {
   position: relative;
   right: 300px;
   opacity: 0.8;
 }
-@media (min-width: 770px) {
-  /* line 28, ../sass/themes/_default.scss */
+@media (min-width: 768px) {
+  /* line 35, ../sass/themes/_default.scss */
   .navMenu_callback:checked ~ .main_section {
     right: 0;
     opacity: 1;
   }
-  /* line 33, ../sass/themes/_default.scss */
-  .navMenu_callback:checked ~ .main_section .nav_menu {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  /* line 119, ../sass/abstracts/_mixins.scss */
-  .navMenu_callback:checked ~ .main_section .nav_menu .nav_list {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-  }
-  /* line 124, ../sass/abstracts/_mixins.scss */
-  .navMenu_callback:checked ~ .main_section .nav_menu .nav_list a {
-    text-decoration: none;
-    transition: all .5s ease;
-  }
-  /* line 130, ../sass/abstracts/_mixins.scss */
-  .navMenu_callback:checked ~ .main_section .nav_menu li {
-    display: inline-block;
-  }
 }
-/* line 43, ../sass/themes/_default.scss */
+/* line 45, ../sass/themes/_default.scss */
 .navMenu_callback:checked ~ .main_section .nav_menu {
-  font-family: 'RobotoRegular', sans-serif;
-  background-color: rgba(255, 255, 255, 0.2);
-  display: flex;
-  position: fixed;
-  flex-direction: column-reverse;
-  top: 0;
   right: 0;
-  height: 100%;
-  z-index: 49;
-  width: 300px;
-  justify-content: flex-start;
-  padding-left: 0;
-}
-/* line 79, ../sass/abstracts/_mixins.scss */
-.navMenu_callback:checked ~ .main_section .nav_menu .nav_list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  color: cadetblue;
-  height: 100%;
-  padding: 0;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  overflow: auto;
-}
-/* line 91, ../sass/abstracts/_mixins.scss */
-.navMenu_callback:checked ~ .main_section .nav_menu .nav_item {
-  border-bottom: 1px solid #dddddd;
-  min-height: 63px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 26px;
-  color: #444444;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-/* line 102, ../sass/abstracts/_mixins.scss */
-.navMenu_callback:checked ~ .main_section .nav_menu .nav_item.nav-login {
-  color: #ef6600;
-  border-bottom: 3px solid #ef6600;
-}
-/* line 105, ../sass/abstracts/_mixins.scss */
-.navMenu_callback:checked ~ .main_section .nav_menu .nav_item.nav-login:hover {
-  color: rgba(255, 255, 255, 0.2);
-}
-/* line 110, ../sass/abstracts/_mixins.scss */
-.navMenu_callback:checked ~ .main_section .nav_menu .nav_item:hover {
-  background-color: rgba(242, 145, 0, 0.5);
 }
 
-/* line 54, ../sass/themes/_default.scss */
+/* line 55, ../sass/themes/_default.scss */
 .main_section {
   -moz-transition: right 0.3s ease 0s;
   -o-transition: right 0.3s ease 0s;
@@ -941,16 +1003,17 @@ header, .body_section {
   width: 100%;
   height: 100%;
   /* Full screen background */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../resources/assets/background.jpg?1473703601');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../resources/assets/background.jpg?1473703601');
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
-  overflow: hidden;
+  background-position-x: center;
+  background-position-y: top;
+  /**/
 }
-/* line 73, ../sass/themes/_default.scss */
+/* line 74, ../sass/themes/_default.scss */
 .main_section .body_section .info_section {
   display: flex;
   flex-direction: column;
