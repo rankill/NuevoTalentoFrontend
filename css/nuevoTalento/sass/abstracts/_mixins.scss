@@ -43,7 +43,7 @@
         $current-breakpoint: $breakpoint !global;
 
         // Open a media query block
-        @media (min-width: $value) {
+        @media (min-width: $value ) {
             // Let the user dump content
             @content;
         }
@@ -131,4 +131,19 @@
             display: inline-block;
         }
     }
+}
+
+
+
+// This declare a list variable to store all images to preload
+$preloaded-images: null;
+
+// This function will append the image or images to $preload-images and returns img path values
+@function preload-img($img-path) {
+    $output: ();
+    @each $img in $img-path {
+        $preloaded-images: append($preloaded-images, url($img));
+        $output: append($output, image-url($img), comma);
+    }
+    @return $output;
 }

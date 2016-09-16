@@ -8,6 +8,14 @@ html, body {
     height: 100%;
 }
 
+//preload images
+body:after{
+    display: none;
+    content: image-url('close.png') $preloaded-images;;
+}
+
+
+
 /* MAIN SECTIONS SEPARATION HEADER AND BODY SECTION (MAIN SECTION) */
 header { top: 0; height: 6.5vw; min-height: 63px; overflow: hidden; max-height: 100px;}
 header, .body_section { position: absolute; left: 0; width: 100%; }
@@ -52,7 +60,9 @@ header, .body_section { position: absolute; left: 0; width: 100%; }
 
 
     /* Full screen background */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), image-url("background.jpg");
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), preload-img('background.jpg');
+
     @include background-size(cover);
     background-repeat: no-repeat;
     background-position: center top;

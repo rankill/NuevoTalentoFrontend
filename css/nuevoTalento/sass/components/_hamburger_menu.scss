@@ -14,12 +14,12 @@
     float: right;
 
     &.open{
-        background: image-url('menu.png') no-repeat;
+        background: preload-img('menu.png') no-repeat;
         background-size: 100% 23px;
     }
 
     &.close{
-        background: image_url('close.png') no-repeat;
+        background: preload-img('close.png') no-repeat;
         background-size: 28px 100%;
     }
 

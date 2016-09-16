@@ -509,12 +509,12 @@ html {
  * making all elements inheriting from the root box-sizing value
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
-/* line 20, ../sass/base/_base.scss */
+/* line 19, ../sass/base/_base.scss */
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-/* line 24, ../sass/base/_base.scss */
+/* line 23, ../sass/base/_base.scss */
 ul, li {
   list-style: none;
 }
@@ -522,7 +522,7 @@ ul, li {
 /**
  * Basic styles for links
  */
-/* line 31, ../sass/base/_base.scss */
+/* line 30, ../sass/base/_base.scss */
 a {
   color: #F29100;
   text-decoration: none;
@@ -533,7 +533,7 @@ a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 
-/* line 41, ../sass/base/_base.scss */
+/* line 40, ../sass/base/_base.scss */
 .title {
   text-align: center;
   font-family: 'RobotoRegular', sans-serif;
@@ -541,7 +541,7 @@ a:hover, a:active, a:focus {
   font-style: normal;
 }
 
-/* line 48, ../sass/base/_base.scss */
+/* line 47, ../sass/base/_base.scss */
 .sub_title {
   text-align: center;
   font-family: 'RobotoThin', sans-serif;
@@ -656,7 +656,7 @@ header .logotipo img {
   width: 179px;
   height: 37px;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   /* line 15, ../sass/layout/_header.scss */
   header .logotipo img {
     width: 220px;
@@ -667,7 +667,7 @@ header .logotipo img {
 header .nav_menu {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   /* line 29, ../sass/layout/_header.scss */
   header .nav_menu {
     align-items: center;
@@ -703,7 +703,7 @@ header .close_nav_header {
   font-size: 22px;
   padding: 0 27px;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   /* line 36, ../sass/layout/_header.scss */
   header .close_nav_header {
     display: none;
@@ -796,7 +796,7 @@ header .close_nav_header {
 .hamburger_menu:hover {
   opacity: 0.8;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   /* line 10, ../sass/components/_hamburger_menu.scss */
   .hamburger_menu {
     display: none;
@@ -809,8 +809,14 @@ html, body {
   height: 100%;
 }
 
-/* MAIN SECTIONS SEPARATION HEADER AND BODY SECTION (MAIN SECTION) */
 /* line 12, ../sass/themes/_default.scss */
+body:after {
+  display: none;
+  content: url('../../../resources/assets/close.png?1473703601');
+}
+
+/* MAIN SECTIONS SEPARATION HEADER AND BODY SECTION (MAIN SECTION) */
+/* line 20, ../sass/themes/_default.scss */
 header {
   top: 0;
   height: 6.5vw;
@@ -819,14 +825,14 @@ header {
   max-height: 100px;
 }
 
-/* line 13, ../sass/themes/_default.scss */
+/* line 21, ../sass/themes/_default.scss */
 header, .body_section {
   position: absolute;
   left: 0;
   width: 100%;
 }
 
-/* line 14, ../sass/themes/_default.scss */
+/* line 22, ../sass/themes/_default.scss */
 .body_section {
   top: 94px;
   bottom: 0;
@@ -835,19 +841,19 @@ header, .body_section {
 
 /*******************************************************************/
 /*Hamburger personalized behavior for the default view, base is in -> _hamburger_menu.scss*/
-/* line 20, ../sass/themes/_default.scss */
+/* line 28, ../sass/themes/_default.scss */
 .navMenu_callback:checked ~ .main_section {
   position: relative;
   right: 300px;
   opacity: 0.8;
 }
-@media (min-width: 768px) {
-  /* line 20, ../sass/themes/_default.scss */
+@media (min-width: 770px) {
+  /* line 28, ../sass/themes/_default.scss */
   .navMenu_callback:checked ~ .main_section {
     right: 0;
     opacity: 1;
   }
-  /* line 25, ../sass/themes/_default.scss */
+  /* line 33, ../sass/themes/_default.scss */
   .navMenu_callback:checked ~ .main_section .nav_menu {
     align-items: center;
     display: flex;
@@ -870,7 +876,7 @@ header, .body_section {
     display: inline-block;
   }
 }
-/* line 35, ../sass/themes/_default.scss */
+/* line 43, ../sass/themes/_default.scss */
 .navMenu_callback:checked ~ .main_section .nav_menu {
   font-family: 'RobotoRegular', sans-serif;
   background-color: rgba(255, 255, 255, 0.2);
@@ -923,7 +929,7 @@ header, .body_section {
   background-color: rgba(242, 145, 0, 0.5);
 }
 
-/* line 46, ../sass/themes/_default.scss */
+/* line 54, ../sass/themes/_default.scss */
 .main_section {
   -moz-transition: right 0.3s ease 0s;
   -o-transition: right 0.3s ease 0s;
@@ -944,7 +950,7 @@ header, .body_section {
   background-position: center top;
   overflow: hidden;
 }
-/* line 63, ../sass/themes/_default.scss */
+/* line 73, ../sass/themes/_default.scss */
 .main_section .body_section .info_section {
   display: flex;
   flex-direction: column;
