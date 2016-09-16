@@ -19,14 +19,23 @@ body:after{
 /* MAIN SECTIONS SEPARATION HEADER AND BODY SECTION (MAIN SECTION) */
 header {
     top: 0;
-    height: 6.5vw;
-    min-height: 54px;
+    min-height: $header_height;
     overflow: hidden;
-    max-height: 82px;
+    max-height: $header_height;
 }
 
 header, .body_section { left: 0; width: 100%; }
-.body_section { position: absolute; top: 63px; bottom: 0; overflow-y: auto; overflow-x: hidden;}
+.body_section {     position: absolute;
+    top: 63px;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 32px;
+    align-items: center;
+}
 /*******************************************************************/
 
 /*Hamburger personalized behavior for the default view, base is in -> _hamburger_menu.scss*/
@@ -39,7 +48,7 @@ header, .body_section { left: 0; width: 100%; }
             }
 
             position: relative;
-            right: 300px;
+            right: 270px;
             opacity: 0.8;
 
             .nav_menu {
@@ -74,9 +83,32 @@ header, .body_section { left: 0; width: 100%; }
         .info_section {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 0 33px;
+            justify-content: flex-end;
+
+            .title{
+                text-align: left;
+                font-family: 'RobotoRegular', sans-serif;
+                font-weight: normal;
+                /* font-size: 70px; */
+                display: block;
+                letter-spacing: 2px;
+                margin: 0;
+                padding: 15px 0 25px;
+                font-size: 49px;
+                text-shadow: 0 0 10px #000;
+                width: 66%;
+                margin: 0;
+            }
+
+            .sub_title{
+                font-family: 'RobotoThin', sans-serif;
+                font-weight: normal;
+                font-style: normal;
+                font-size: 30px;
+                padding: 0;
+                text-align: left;
+                margin: 0;
+            }
         }
     }
 }
