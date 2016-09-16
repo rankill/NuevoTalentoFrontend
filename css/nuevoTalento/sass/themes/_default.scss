@@ -66,8 +66,6 @@ header, .body_section { position: absolute; left: 0; width: 100%; }
     @include background-size(cover);
     background-repeat: no-repeat;
     background-position: center top;
-    overflow: hidden;
-
 
     .body_section {
         .info_section {
