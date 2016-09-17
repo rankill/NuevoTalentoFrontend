@@ -2,14 +2,92 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
+
+/*Btn default*/
+
 [class*='btn']{
-    width: 12%;
-    border: 1px solid white;
-    border-radius: 4px;
+    background-color: #d3d3d3;
+    border: none;
+    -webkit-border-radius: .4em;
+    border-radius: .4em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "RobotoRegular",sans-serif;
+    font-size: .85em;
+    font-weight: 700;
+    padding: .6em .8em .8em;
     text-decoration: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /* -webkit-tap-highlight-color: transparent; */
+    -webkit-user-select: none;
+    user-select: none;
+    /* -webkit-transition: .2s; */
+    -moz-transition: .2s;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    /* transition: .2s; */
+    vertical-align: middle;
+    -webkit-box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:active{
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
 }
 
 .btn_login{
     max-height: 251px;
     padding: 1vw;
+}
+
+.btn_brand_color{
+    background-color: $brand-color;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+//// social buttons ////
+.logo_social_media{
+    border-right: 1px solid transparent;
+    border-right-color: inherit;
+    padding-right: 1.5em;
+    margin-right: 0.5em;
+    content: "\0000a0";
+    width: 33px;
+    background-size: 17px;
+}
+
+
+.btn_fb{
+    background-color: $facebook_color;
+
+    &::before {
+        background: preload-img('facebook.png') no-repeat;
+        background-size: 17px;
+        @extend .logo_social_media;
+    }
+}
+
+.btn_lkin{
+    background-color: $linkedin_color;
+
+    &::before{
+        background: preload-img('Linkedin.png') no-repeat;
+        background-size: 17px;
+        @extend .logo_social_media;
+    }
 }

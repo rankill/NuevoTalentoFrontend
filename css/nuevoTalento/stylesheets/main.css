@@ -1,10 +1,10 @@
+/* BOX COLOR */
 /* Fill colors  */
 /* outline colors */
 /* visual control */
 /* NAV STYLES, DESKTOP AND MOBILE  */
 /* NAV DESKTOP  */
 /* NAV DESKTOP  */
-/* NAV STYLES, DESKTOP AND MOBILE  */
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -565,6 +565,24 @@ a:hover, a:active, a:focus {
   font-weight: normal;
   font-style: normal;
 }
+/* line 5, ../sass/base/_icons.scss */
+.icon_line {
+  border-right: 1px solid transparent;
+  border-right-color: inherit;
+  padding-right: .5em;
+  margin-right: .5em;
+}
+
+/* line 13, ../sass/base/_icons.scss */
+.icon_fb {
+  background-image: url('../../../resources/assets/facebook.png?1473703601');
+}
+
+/* line 18, ../sass/base/_icons.scss */
+.icon_lkin {
+  background-image: url('../../../resources/assets/Linkedin.png?1473703601');
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -634,6 +652,24 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+/**
+* Center a tex with text-align dynamic
+*/
+/* line 64, ../sass/base/_helpers.scss */
+.text_left {
+  text-align: left;
+}
+
+/* line 64, ../sass/base/_helpers.scss */
+.text_center {
+  text-align: center;
+}
+
+/* line 64, ../sass/base/_helpers.scss */
+.text_right {
+  text-align: right;
 }
 
 /* line 4, ../sass/layout/_header.scss */
@@ -758,16 +794,16 @@ header .nav_menu .nav_list {
     max-height: 54px;
     padding: 15px;
     position: absolute;
-    right: 48px;
+    right: 27px;
   }
   /* line 132, ../sass/layout/_header.scss */
   header .nav_menu .nav_list {
     justify-content: space-around;
-    width: 65%;
+    width: 72%;
     padding: 0;
     margin: 0;
   }
-  /* line 142, ../sass/layout/_header.scss */
+  /* line 140, ../sass/layout/_header.scss */
   header .nav_menu .nav_list .nav_list_wrapper .nav_subitems {
     background-color: rgba(222, 222, 222, 0.95);
     position: absolute;
@@ -779,7 +815,7 @@ header .nav_menu .nav_list {
     width: auto;
     margin-top: 24px;
   }
-  /* line 154, ../sass/layout/_header.scss */
+  /* line 153, ../sass/layout/_header.scss */
   header .nav_menu .nav_list .nav_list_wrapper .nav_subitems a {
     height: 38px;
     border-bottom: 1px solid rgba(117, 117, 117, 0.16);
@@ -787,12 +823,12 @@ header .nav_menu .nav_list {
     align-items: center;
     padding: 0 23px;
   }
-  /* line 161, ../sass/layout/_header.scss */
+  /* line 160, ../sass/layout/_header.scss */
   header .nav_menu .nav_list .nav_list_wrapper .nav_subitems a li {
     color: #6f6f6f;
   }
 }
-/* line 173, ../sass/layout/_header.scss */
+/* line 172, ../sass/layout/_header.scss */
 header .close_nav_header {
   height: 72px;
   min-height: 72px;
@@ -805,7 +841,7 @@ header .close_nav_header {
   padding: 0 27px;
 }
 @media (min-width: 768px) {
-  /* line 173, ../sass/layout/_header.scss */
+  /* line 172, ../sass/layout/_header.scss */
   header .close_nav_header {
     display: none;
   }
@@ -871,18 +907,134 @@ header .close_nav_header {
   width: 100%;
 }
 
-/* line 5, ../sass/components/_button.scss */
+/*Btn default*/
+/* line 8, ../sass/components/_button.scss */
 [class*='btn'] {
-  width: 12%;
-  border: 1px solid white;
-  border-radius: 4px;
+  background-color: #d3d3d3;
+  border: none;
+  -webkit-border-radius: .4em;
+  border-radius: .4em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "RobotoRegular",sans-serif;
+  font-size: .85em;
+  font-weight: 700;
+  padding: .6em .8em .8em;
   text-decoration: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  /* -webkit-tap-highlight-color: transparent; */
+  -webkit-user-select: none;
+  user-select: none;
+  /* -webkit-transition: .2s; */
+  -moz-transition: .2s;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  /* transition: .2s; */
+  vertical-align: middle;
+  -webkit-box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* line 45, ../sass/components/_button.scss */
+[class*='btn']:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
-/* line 12, ../sass/components/_button.scss */
+/* line 51, ../sass/components/_button.scss */
 .btn_login {
   max-height: 251px;
   padding: 1vw;
+}
+
+/* line 56, ../sass/components/_button.scss */
+.btn_brand_color {
+  background-color: #F29100;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 64, ../sass/components/_button.scss */
+.logo_social_media, .btn_fb::before, .btn_lkin::before {
+  border-right: 1px solid transparent;
+  border-right-color: inherit;
+  padding-right: 1.5em;
+  margin-right: 0.5em;
+  content: "\0000a0";
+  width: 33px;
+  background-size: 17px;
+}
+
+/* line 75, ../sass/components/_button.scss */
+.btn_fb {
+  background-color: #3B5998;
+}
+/* line 78, ../sass/components/_button.scss */
+.btn_fb::before {
+  background: url('../../../resources/assets/facebook.png?1473703601') no-repeat;
+  background-size: 17px;
+}
+
+/* line 85, ../sass/components/_button.scss */
+.btn_lkin {
+  background-color: #007bb5;
+}
+/* line 88, ../sass/components/_button.scss */
+.btn_lkin::before {
+  background: url('../../../resources/assets/Linkedin.png?1473703601') no-repeat;
+  background-size: 17px;
+}
+
+/* line 5, ../sass/components/_input.scss */
+input {
+  border: none;
+  -webkit-border-radius: .4em;
+  border-radius: .2em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "RobotoRegular",sans-serif;
+  font-size: .85em;
+  padding: .6em .6em .6em;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-transition: .2s;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  vertical-align: middle;
+  -webkit-box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -0.1em rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  -moz-appearance: none;
+  appearance: none;
+  color: #444444;
+}
+
+/* line 37, ../sass/components/_input.scss */
+.btn_login {
+  max-height: 251px;
+  padding: 1vw;
+}
+
+/* line 48, ../sass/components/_input.scss */
+.btn_brand_color {
+  background-color: #F29100;
+  color: white;
+  text-transform: uppercase;
 }
 
 /* line 6, ../sass/components/_hamburger_menu.scss */
@@ -901,12 +1053,12 @@ header .close_nav_header {
 }
 /* line 18, ../sass/components/_hamburger_menu.scss */
 .hamburger_menu.open {
-  background: url('../../../resources/assets/menu.png?1474048572') no-repeat;
+  background: url('../../../resources/assets/menu.png?1473703601') no-repeat;
   background-size: 100% 18px;
 }
 /* line 23, ../sass/components/_hamburger_menu.scss */
 .hamburger_menu.close {
-  background: url('../../../resources/assets/close.png?1474048572') no-repeat;
+  background: url('../../../resources/assets/close.png?1473703601') no-repeat;
   background-size: 18px 100%;
 }
 /* line 28, ../sass/components/_hamburger_menu.scss */
@@ -954,33 +1106,39 @@ header, .body_section {
   overflow-y: auto;
   overflow-x: hidden;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  padding: 0px 32px;
+  padding: 0px 42px;
   align-items: center;
+}
+@media (min-width: 768px) {
+  /* line 28, ../sass/themes/_default.scss */
+  .body_section {
+    flex-direction: row;
+  }
 }
 
 /*******************************************************************/
 /*Hamburger personalized behavior for the default view, base is in -> _hamburger_menu.scss*/
-/* line 44, ../sass/themes/_default.scss */
+/* line 49, ../sass/themes/_default.scss */
 .navMenu_callback:checked ~ .main_section {
   position: relative;
   right: 270px;
   opacity: 0.8;
 }
 @media (min-width: 768px) {
-  /* line 44, ../sass/themes/_default.scss */
+  /* line 49, ../sass/themes/_default.scss */
   .navMenu_callback:checked ~ .main_section {
     right: 0;
     opacity: 1;
   }
 }
-/* line 54, ../sass/themes/_default.scss */
+/* line 59, ../sass/themes/_default.scss */
 .navMenu_callback:checked ~ .main_section .nav_menu {
   right: 0;
 }
 
-/* line 64, ../sass/themes/_default.scss */
+/* line 69, ../sass/themes/_default.scss */
 .main_section {
   -moz-transition: right 0.3s ease 0s;
   -o-transition: right 0.3s ease 0s;
@@ -992,7 +1150,7 @@ header, .body_section {
   width: 100%;
   height: 100%;
   /* Full screen background */
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../resources/assets/background.jpg?1474048572');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../resources/assets/background.jpg?1473703601');
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -1001,35 +1159,93 @@ header, .body_section {
   background-position-x: center;
   background-position-y: top;
   /**/
+  overflow: hidden;
 }
-/* line 83, ../sass/themes/_default.scss */
+/* line 91, ../sass/themes/_default.scss */
 .main_section .body_section .info_section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-/* line 88, ../sass/themes/_default.scss */
-.main_section .body_section .info_section .title {
-  text-align: left;
+@media (min-width: 768px) {
+  /* line 91, ../sass/themes/_default.scss */
+  .main_section .body_section .info_section {
+    margin-right: 34px;
+    margin-top: 92px;
+  }
+}
+/* line 102, ../sass/themes/_default.scss */
+.main_section .body_section .info_section .main_title {
+  text-align: center;
   font-family: 'RobotoRegular', sans-serif;
   font-weight: normal;
-  /* font-size: 70px; */
   display: block;
   letter-spacing: 2px;
   margin: 0;
   padding: 15px 0 25px;
   font-size: 49px;
   text-shadow: 0 0 10px #000;
-  width: 66%;
-  margin: 0;
 }
-/* line 103, ../sass/themes/_default.scss */
+@media (min-width: 768px) {
+  /* line 102, ../sass/themes/_default.scss */
+  .main_section .body_section .info_section .main_title {
+    width: 401px;
+    text-align: left;
+  }
+}
+/* line 121, ../sass/themes/_default.scss */
 .main_section .body_section .info_section .sub_title {
+  text-align: center;
   font-family: 'RobotoThin', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 30px;
   padding: 0;
-  text-align: left;
   margin: 0;
+}
+@media (min-width: 768px) {
+  /* line 121, ../sass/themes/_default.scss */
+  .main_section .body_section .info_section .sub_title {
+    width: 469px;
+    text-align: left;
+  }
+}
+/* line 139, ../sass/themes/_default.scss */
+.main_section .body_section .register_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(222, 222, 222, 0.95);
+  border-top: 4px solid #F29100;
+  border-radius: .3em;
+  height: 18em;
+  min-height: 18em;
+  width: 15em;
+  padding: 13px;
+}
+/* line 154, ../sass/themes/_default.scss */
+.main_section .body_section .register_section label {
+  color: #999999;
+}
+/* line 159, ../sass/themes/_default.scss */
+.main_section .body_section .register_section .social_register, .main_section .body_section .register_section .local_register_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+/* line 165, ../sass/themes/_default.scss */
+.main_section .body_section .register_section .social_register {
+  height: 84px;
+}
+/* line 169, ../sass/themes/_default.scss */
+.main_section .body_section .register_section .local_register_form {
+  height: 124px;
+}
+/* line 173, ../sass/themes/_default.scss */
+.main_section .body_section .register_section .local_register_form input {
+  opacity: 0.7;
+}
+/* line 176, ../sass/themes/_default.scss */
+.main_section .body_section .register_section .local_register_form input:invalid {
+  opacity: 0.5;
 }

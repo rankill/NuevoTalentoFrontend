@@ -25,16 +25,21 @@ header {
 }
 
 header, .body_section { left: 0; width: 100%; }
-.body_section {     position: absolute;
+.body_section {
+    position: absolute;
     top: 63px;
     bottom: 0;
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    padding: 0px 32px;
+    padding: 0px 42px;
     align-items: center;
+
+    @include breakpoint(desktop){
+        flex-direction: row;
+    }
 }
 /*******************************************************************/
 
@@ -78,36 +83,100 @@ header, .body_section { left: 0; width: 100%; }
     background-position-y: top;
     /**/
 
+    overflow: hidden;
 
     .body_section {
+
+
         .info_section {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
 
-            .title{
-                text-align: left;
+            @include breakpoint(desktop){
+                margin-right: 34px;
+                margin-top: 92px;
+            }
+
+
+            .main_title{
+                text-align: center;
                 font-family: 'RobotoRegular', sans-serif;
                 font-weight: normal;
-                /* font-size: 70px; */
                 display: block;
                 letter-spacing: 2px;
                 margin: 0;
                 padding: 15px 0 25px;
                 font-size: 49px;
                 text-shadow: 0 0 10px #000;
-                width: 66%;
-                margin: 0;
+
+                @include breakpoint(desktop){
+                    width: 401px;
+                    text-align: left;
+                }
+
+
             }
 
             .sub_title{
+                text-align: center;
+
                 font-family: 'RobotoThin', sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 font-size: 30px;
                 padding: 0;
-                text-align: left;
                 margin: 0;
+
+
+                @include breakpoint(desktop){
+                    width: 469px;
+                    text-align: left;
+                }
+            }
+        }
+
+        .register_section{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            background-color: $box-traslucent-color;
+            border-top: 4px solid $brand-color;
+            border-radius: .3em;
+
+            height: 18em;
+            min-height: 18em;
+            width: 15em;
+
+            padding: 13px;
+
+            label{
+                color: $mid-grey;
+            }
+
+
+            .social_register, .local_register_form{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .social_register{
+                height: 84px;
+            }
+
+            .local_register_form{
+
+                height: 124px;
+
+                input{
+                    opacity: 0.7;
+
+                    &:invalid{
+                        opacity: 0.5;
+                    }
+                }
             }
         }
     }

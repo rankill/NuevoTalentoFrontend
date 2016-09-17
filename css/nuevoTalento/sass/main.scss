@@ -16,8 +16,10 @@
 
 
 // 3. Base stuff
-@import 'base/base',
+@import
+'base/base',
 'base/fonts',
+'base/icons',
 'base/typography',
 'base/helpers';
 
@@ -28,7 +30,9 @@
 'layout/grid_system';
 
 // 5. Components
-@import 'components/button',
+@import
+'components/button',
+'components/input',
 'components/hamburger_menu';
 
 // 6. Page-specific styles

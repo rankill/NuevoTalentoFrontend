@@ -12,7 +12,6 @@
 
     var currentNav = document.getElementById('nav_menu');
     var openCloseNavTrigger = document.getElementById("navMenu_callback");
-
     ("mousedown touchstart".split(" ")).forEach(function(e){
         window.addEventListener(e,function( event ) {
             console.warn(event.target)
@@ -25,7 +24,13 @@
         },false);
     });
 
-    function loadJSON(_jsonFile, _callback) {
+
+    /**
+     * Function to load the json data and build the nav of the webpage dynamically
+     * @param _jsonFile
+     * @param _callback
+     */
+    function loadJSONAndBuildNav(_jsonFile, _callback) {
 
         var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
@@ -40,9 +45,17 @@
     }
 
 
-    loadJSON('resources/data/menu.json', function(response) {
+    loadJSONAndBuildNav('resources/data/menu.json', function(response) {
         // Parse JSON string into object
         var actual_JSON = JSON.parse(response);
+
+        console.warn(actual_JSON)
     });
+
+
+
+    document.getElementsByTagName('input').onchange = function(){
+        console.warn("Cambie de input papu")
+    }
 
 }());

@@ -65,17 +65,6 @@
 }
 
 
-/* NAV STYLES, DESKTOP AND MOBILE  */
-@mixin get-nav-from-type($navType:'phone'){
-    @if $navType == 'phone' {
-
-    }@else {
-
-    }
-}
-
-
-
 // This declare a list variable to store all images to preload
 $preloaded-images: null;
 

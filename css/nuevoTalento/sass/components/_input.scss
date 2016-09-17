@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+input{
+    border: none;
+    -webkit-border-radius: .4em;
+    border-radius: .2em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "RobotoRegular",sans-serif;
+    font-size: .85em;
+    padding: .6em .6em .6em;
+
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -moz-transition: .2s;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+
+    vertical-align: middle;
+    -webkit-box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -0.1em rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+
+    -moz-appearance: none;
+    appearance: none;
+
+    color: $dark-grey;
+}
+
+.btn_login{
+    max-height: 251px;
+    padding: 1vw;
+}
+
+
+.btn_fb{
+
+}
+
+
+.btn_brand_color{
+    background-color: $brand-color;
+    color: white;
+    text-transform: uppercase;
+}

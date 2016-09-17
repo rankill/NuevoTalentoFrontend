@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This file contains all the icons galery
+// -----------------------------------------------------------------------------
+//// Helper buttons ////
+.icon_line{
+    border-right: 1px solid transparent;
+    border-right-color: inherit;
+    padding-right: .5em;
+    margin-right: .5em;
+}
+
+
+.icon_fb{
+    background-image: preload-img('facebook.png');
+
+}
+
+.icon_lkin{
+    background-image: preload-img('Linkedin.png');
+}

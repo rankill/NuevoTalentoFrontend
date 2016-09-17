@@ -15,8 +15,9 @@ $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvet
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
 
-
-
+//// COLORS ////
+$success-color: #198052;
+$error-color: #ff2643;
 
 /// Copy text color
 /// @type Color
@@ -35,8 +36,11 @@ $mid-grey: rgb(153, 153, 153) !default;
 $dark-grey: rgb(68, 68, 68) !default;
 
 
-/* Fill colors  */
 
+/* BOX COLOR */
+$box-traslucent-color: rgba(222, 222, 222, 0.95);
+
+/* Fill colors  */
 
 /// Main brand color
 /// @type Color
@@ -62,8 +66,8 @@ $max-width: 1180px !default;
 /// Relative or absolute URL where all assets are served from
 /// @type String
 /// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '../../../resources/assets/' !default;
+///   $assets-ur: 'http://cdn.example.com/assets/';
+$assets-ur: '../../../resources/assets/' !default;
 $resources-url: '../../../resources/' !default;
 
 // grid variables

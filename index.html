@@ -66,26 +66,38 @@
 
     <section class="body_section"> <!-- Everything under the header -->
         <section class="info_section" id="main_info"> <!-- body info section -->
-            <h1 class="title">Amar tu trabajo no tiene precio...</h1><!-- title -->
+            <h1 class="main_title">Amar tu trabajo no tiene precio...</h1><!-- title -->
             <h2 class='sub_title'>Tu mejor empleo te esta esperando</h2><!-- subtitle -->
         </section>
 
         <section class="register_section" id="register" > <!-- register section -->
             <label class="register_label">Registrate</label><!-- label register -->
+
             <div class="social_register"> <!--  Social register -->
-                <button class="btn_default linkedin_register">Conectar con Linkedin</button> <!--  Linked in register -->
-                <button class="btn_default facebook_register">Conectar con Facebook</button> <!--  Facebook in register -->
+                <a href="#" class="btn_lkin LoginView-socialbtn"> <!--Linkedin register -->
+                    Conectar con Linkedin
+                </a>
+
+                <a href="#" class="btn_fb LoginView-socialbtn"> <!--Facebook register -->
+                    Conectar con Facebook
+                </a>
             </div>
 
-            <span>Or</span>
+            <label class="text_center">Or</label>
 
-            <div class="local_register"> <!-- Local register -->
-                <form action="">
-                    <input class="input_default email_input" type="text" placeholder="E-mail">
-                    <input class="input_default email_contraseña" type="password" placeholder="Contraseña">
-                    <button class="btn_default register">Registrarse</button>
-                </form>
-            </div>
+
+            <form action="" class="local_register_form">   <!-- Local register -->
+                <input required
+                       class="input_default email_input"
+                       type="text"
+                       placeholder="E-mail"
+                       pattern="([\dA-Za-z_\.-]+)@([\dA-Za-z\.-]+)\.([A-Za-z\.]{2,6})"/">
+                <input required
+                       class="input_default password_input"
+                       type="password"
+                       placeholder="Contraseña">
+                <button class="btn_brand_color">Registrarse</button>
+            </form>
         </section>
     </section>
 
