@@ -9,6 +9,28 @@ html {
     box-sizing: border-box;
 }
 
+/* Body */
+
+//preload images
+body {
+    margin: 0;
+    font-size: 16px; //Base font
+
+    &::after {
+        display: none;
+        content: $preloaded-images;;
+    }
+}
+
+
+/* Base fonts */
+.small {
+  font-size: 12px; /* 75% of the baseline */
+}
+
+.large {
+  font-size: 20px; /* 125% of the baseline */
+}
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing

@@ -2,13 +2,24 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 header {
-    align-items: center;
+    width: 100%;
+    font-family: "RobotoRegular" , sans-serif;
+    color: #fafafa;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
     display: flex;
-    justify-content: space-between;
-    padding-left: 8px;
-    height: 100%;
+    flex-direction: column;
     background-color: rgba(18, 18, 22, 0.53);
 
+    @include breakpoint(desktop){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all .3s ease;
+    }
 
     .logotipo {
         margin: 0;

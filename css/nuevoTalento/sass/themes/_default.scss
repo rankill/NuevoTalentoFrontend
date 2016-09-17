@@ -9,38 +9,17 @@ html, body {
 }
 
 //preload images
-body:after{
-    display: none;
-    content: $preloaded-images;;
-}
+body {
+    margin: 0;
+    font-size: 16px;
 
-
-
-/* MAIN SECTIONS SEPARATION HEADER AND BODY SECTION (MAIN SECTION) */
-header {
-    top: 0;
-    min-height: $header_height;
-    overflow: hidden;
-    max-height: $header_height;
-}
-
-header, .body_section { left: 0; width: 100%; }
-.body_section {
-    position: absolute;
-    top: 63px;
-    bottom: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0px 42px;
-    align-items: center;
-
-    @include breakpoint(desktop){
-        flex-direction: row;
+    &::after {
+        display: none;
+        content: $preloaded-images;;
     }
 }
+
+
 /*******************************************************************/
 
 /*Hamburger personalized behavior for the default view, base is in -> _hamburger_menu.scss*/
@@ -50,11 +29,15 @@ header, .body_section { left: 0; width: 100%; }
             @include breakpoint(desktop){
                 right: 0;
                 opacity: 1;
+                overflow-x: hidden;
+                overflow-y: auto;
+
             }
 
             position: relative;
             right: 270px;
             opacity: 0.8;
+            overflow: hidden;
 
             .nav_menu {
                 right: 0;
@@ -81,21 +64,39 @@ header, .body_section { left: 0; width: 100%; }
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
+    background-attachment: fixed;
     /**/
 
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+
 
     .body_section {
 
+        padding: 64px 0 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        align-items: center;
+
+
+        @include breakpoint(desktop){
+            flex-direction: row;
+            margin-top: 13%;
+        }
 
         .info_section {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            padding: 5% 13%;
 
             @include breakpoint(desktop){
                 margin-right: 34px;
                 margin-top: 92px;
+                padding: 0;
             }
 
 
@@ -178,6 +179,132 @@ header, .body_section { left: 0; width: 100%; }
                     }
                 }
             }
+        }
+    }
+}
+
+
+
+
+
+/******* TEST ************/
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: Lato;
+}
+
+.content .container .content-block-title {
+    font-family: Montserrat;
+}
+
+.header--light {
+    background-color: #fafafa;
+    color: #212121;
+}
+
+.header-btn-nav, .header-menu-navbar {
+    background-color: #212121;
+}
+
+.header-mobile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    order: 1;
+    margin-left: 1rem;
+    padding: 0;
+    line-height: 64px;
+}
+
+.header-btn-nav {
+    display: block;
+    order: 2;
+    border: 0;
+    border-radius: .4em;
+    color: #fafafa;
+    padding: 0;
+    margin: 1em;
+}
+
+.header-menu-list {
+    list-style-type: none;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease;
+}
+
+.header-menu-list--show {
+    height: 280px;
+}
+
+.header-menu-list-item a {
+    text-decoration: none;
+    color: #fafafa;
+    width: 100%;
+    padding: 1.5em;
+    display: block;
+}
+
+@media (min-width: 768px) {
+
+}
+
+.content {
+    margin: 64px 0 0;
+    .container {
+        .content-features {
+            padding: 0;
+        }
+        .content-block {
+            padding: 1em;
+            border-left: 6px solid #dedede;
+            border-bottom: 1px solid #dedede;
+            &:hover {
+                background-color: #dedede;
+            }
+            &:nth-child(1) {
+                border-left-color: green;
+            }
+            &:nth-child(2) {
+                border-left-color: red;
+            }
+            &:nth-child(3) {
+                border-left-color: #00f;
+            }
+            &:nth-child(4) {
+                border-left-color: orange;
+            }
+        }
+    }
+}
+
+.content-text-image .container picture {
+    margin: 0 auto;
+}
+
+@media (min-width: 786px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+    .content-features .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .content-text-image .container {
+        display: flex;
+        picture {
+            margin: 1em;
+            order: 1;
+            width: 30%;
+        }
+        p {
+            order: 2;
+            width: 70%;
         }
     }
 }
