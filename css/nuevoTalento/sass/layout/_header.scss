@@ -5,10 +5,9 @@ header {
     width: 100%;
     font-family: "RobotoRegular" , sans-serif;
     color: #fafafa;
-    height: 64px;
+    height: $header_height;
     position: fixed;
     top: 0;
-    left: 0;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -45,8 +44,56 @@ header {
 
         font-family: 'RobotoRegular', sans-serif;
 
+        button, a{
+
+            cursor: pointer;
+            -webkit-user-select: none;
+
+            @include on-event(){
+                opacity: 0.6;
+
+            }
+        }
+
         .nav_list{
             display: flex;
+
+            //Default visual for a element inside subitems
+            .nav_subitems{
+                max-height: 0;
+                transition: max-height .300s linear 0s;
+                z-index: -1;
+
+                li{
+                    visibility:hidden;
+
+                    transition:  visibility 0s linear .150s;
+                }
+
+                &.nav_visible{
+                    transition: max-height.300s linear 0s;
+
+                    max-height: 500px;
+
+
+                    li{
+                        visibility:visible;
+                        transition: visibility 0s linear .150s;
+                    }
+                }
+
+                a{
+                    color: $mid-grey;
+                    height: 100%;
+                    width: 100%;
+                    padding: 0 28px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+
+            }
         }
 
 
@@ -85,8 +132,13 @@ header {
                         padding-left: 26px;
 
                         li{
-                            color: gray;
                             height: 40px;
+                        }
+
+                        // Como propuesta, no quitar el padding de los elementos para tener una vision mas jerarquica
+                        //de los mismos, sin embargo, se adapta al wireframe recibido
+                        a{
+                            padding: 0;
                         }
                     }
                 }
@@ -106,6 +158,7 @@ header {
 
                 text-transform: uppercase;
                 text-decoration: none;
+                justify-content: space-between;
 
                 &.nav_login {
                     color: $brand-outline-color;
@@ -113,13 +166,19 @@ header {
                     height: $header_height;
 
                     &:hover{
-                        color: $white_alpha20_color;
+                        color: white ;
                     }
+
                 }
 
-                &:hover{
+
+                @include on-event(){
                     background-color: $brand-alpha-half-color;
+
+                    //Use important (it should be avoided) to override the default value
+                    opacity: 1 !important;
                 }
+
             }
         }
 
@@ -161,19 +220,13 @@ header {
                         width: auto;
                         margin-top: 24px;
 
-                        a {
+                        li{
+
                             height: 38px;
                             border-bottom: 1px solid rgba(117, 117, 117, 0.16);
                             display: flex;
                             align-items: center;
-                            padding: 0 23px;
-
-                            li {
-                                color: rgb(111, 111, 111)
-                            }
-
                         }
-
                     }
                 }
             }

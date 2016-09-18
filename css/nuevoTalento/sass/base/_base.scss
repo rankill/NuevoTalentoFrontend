@@ -54,10 +54,6 @@ ul, li{
 a {
     text-decoration: none;
 
-    @include on-event {
-        color: $text-color;
-        opacity: 0.8;
-    }
 }
 
 .title{

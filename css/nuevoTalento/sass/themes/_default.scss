@@ -26,27 +26,39 @@ body {
 .navMenu_callback {
     &:checked {
         ~ .main_section {
-            @include breakpoint(desktop){
-                right: 0;
-                opacity: 1;
-                overflow-x: hidden;
-                overflow-y: auto;
 
-            }
+
 
             position: relative;
             right: 270px;
             opacity: 0.8;
             overflow: hidden;
+            background-attachment: initial;
 
             .nav_menu {
                 right: 0;
             }
+
+            .header{
+                right: 270px;
+            }
+
+
+            @include breakpoint(desktop){
+                right: 0;
+                opacity: 1;
+                overflow-x: hidden;
+                overflow-y: auto;
+                background-attachment: fixed;
+
+                .header{
+                    right: 0;
+                }
+            }
+
         }
     }
 }
-
-
 
 
 .main_section {
@@ -58,7 +70,10 @@ body {
 
 
     /* Full screen background */
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), preload-img('background.jpg');
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+    ), preload-img('background_reduced.jpg');
 
     @include background-size(cover);
     background-repeat: no-repeat;
@@ -73,7 +88,7 @@ body {
 
     .body_section {
 
-        padding: 64px 0 0px;
+        padding: 64px 0 0;
 
         display: flex;
         flex-direction: column;
