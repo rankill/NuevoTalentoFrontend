@@ -55,48 +55,6 @@ header {
             }
         }
 
-        .nav_list{
-            display: flex;
-
-            //Default visual for a element inside subitems
-            .nav_subitems{
-                max-height: 0;
-                transition: max-height .300s linear 0s;
-                z-index: -1;
-
-                li{
-                    visibility:hidden;
-
-                    transition:  visibility 0s linear .150s;
-                }
-
-                &.nav_visible{
-                    transition: max-height.300s linear 0s;
-
-                    max-height: 500px;
-
-
-                    li{
-                        visibility:visible;
-                        transition: visibility 0s linear .150s;
-                    }
-                }
-
-                a{
-                    color: $mid-grey;
-                    height: 100%;
-                    width: 100%;
-                    padding: 0 28px;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                }
-
-
-            }
-        }
-
-
         @include breakpoint(phone){
             background-color: $white_alpha20_color;
 
@@ -107,7 +65,7 @@ header {
             right: -300px;
             top: 0;
 
-            height: 100%;
+            height: 1040px; //It will safe the nav bar to be overflowed
             width: 270px;
 
             z-index: 49;
@@ -231,6 +189,48 @@ header {
                 }
             }
         }
+
+        .nav_list{
+            display: flex;
+
+            //Default visual for a element inside subitems
+            .nav_subitems{
+                max-height: 0;
+                transition: max-height .300s linear 0s;
+                z-index: -1;
+
+                li{
+                    visibility:hidden;
+
+                    transition:  visibility 0s linear .150s;
+                }
+
+                &.nav_visible{
+                    transition: max-height.300s linear 0s;
+
+                    max-height: 500px;
+
+
+                    li{
+                        visibility:visible;
+                        transition: visibility 0s linear .150s;
+                    }
+                }
+
+                a{
+                    color: $mid-grey;
+                    height: 100%;
+                    width: 100%;
+                    padding: 0 28px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+
+            }
+        }
+
     }
 
     .close_nav_header{

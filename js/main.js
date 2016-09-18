@@ -33,23 +33,29 @@
      */
     function createNavList(_responseParsed, _responseOriginal) {
 
-        var currentUL = document.getElementById("nav_list");
+        var currentUL = document.getElementsByClassName("nav_list");
 
-        var unorderedList = new UnorderedList
-        (
-            //List items to create the ul
-            _responseParsed.items,
+        for (var i=0; i<currentUL.length; i++) {
+            var unorderedList = new UnorderedList
+            (
+                //List items to create the ul
+                _responseParsed.items,
 
-            //Unordered list to update
-            currentUL,
+                //Unordered list to update
 
-            // classes ul items
-            // principal ul, principal li, pricipal li link, sub ul and sub li
-            //_mainUlClass, _mainliClass, _mainLiLinkClass, _subUlCLass, _subLiCLass
-            '', 'nav_list_wrapper', 'nav_item', 'nav_subitems'
-        );
+                currentUL[i],
 
-        unorderedList.buildList();
+                // classes ul items
+                // principal ul, principal li, pricipal li link, sub ul and sub li
+                //_mainUlClass, _mainliClass, _mainLiLinkClass, _subUlCLass, _subLiCLass
+                '', 'nav_list_wrapper', 'nav_item', 'nav_subitems'
+            );
+
+            unorderedList.buildList();
+        }
+
+
+
     }
 
 
