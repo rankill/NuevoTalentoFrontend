@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc56e4c5-94a0-46c5-a75f-1815a03470b5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/nuevoTalento/sass/abstracts/_classes.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/assets/rsp1.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nuevoTalento/.sass-cache/1e462a153b8781168c83328c34055372fa9b756b/_base.scssc" afterPath="$PROJECT_DIR$/css/nuevoTalento/.sass-cache/1e462a153b8781168c83328c34055372fa9b756b/_base.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nuevoTalento/.sass-cache/34a40336abb1356886489b92f3eae5cbcc44485b/_default.scssc" afterPath="$PROJECT_DIR$/css/nuevoTalento/.sass-cache/34a40336abb1356886489b92f3eae5cbcc44485b/_default.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nuevoTalento/.sass-cache/7aa46f702e9ee3bb8dad4565943e61e34c7c45a9/main.scssc" afterPath="$PROJECT_DIR$/css/nuevoTalento/.sass-cache/7aa46f702e9ee3bb8dad4565943e61e34c7c45a9/main.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nuevoTalento/.sass-cache/a021b364dd7d7c8fdaca1c44203ba3573d09cc9e/_header.scssc" afterPath="$PROJECT_DIR$/css/nuevoTalento/.sass-cache/a021b364dd7d7c8fdaca1c44203ba3573d09cc9e/_header.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nuevoTalento/.sass-cache/d059607d0008e2a687de5db8090a9f56ec2d8a18/_variables.scssc" afterPath="$PROJECT_DIR$/css/nuevoTalento/.sass-cache/d059607d0008e2a687de5db8090a9f56ec2d8a18/_variables.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nuevoTalento/sass/abstracts/_variables.scss" afterPath="$PROJECT_DIR$/css/nuevoTalento/sass/abstracts/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nuevoTalento/sass/base/_base.scss" afterPath="$PROJECT_DIR$/css/nuevoTalento/sass/base/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nuevoTalento/sass/base/_icons.scss" afterPath="$PROJECT_DIR$/css/nuevoTalento/sass/base/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nuevoTalento/sass/layout/_header.scss" afterPath="$PROJECT_DIR$/css/nuevoTalento/sass/layout/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nuevoTalento/sass/main.scss" afterPath="$PROJECT_DIR$/css/nuevoTalento/sass/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nuevoTalento/sass/themes/_default.scss" afterPath="$PROJECT_DIR$/css/nuevoTalento/sass/themes/_default.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nuevoTalento/stylesheets/main.css" afterPath="$PROJECT_DIR$/css/nuevoTalento/stylesheets/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="FrontEndSolution.iws" />
@@ -72,8 +57,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1665">
-              <caret line="111" column="39" selection-start-line="111" selection-start-column="39" selection-end-line="111" selection-end-column="39" />
+            <state relative-caret-position="-1066">
+              <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -664,7 +649,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474126147266</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Finalizados requerimientos finales&#10;&#10;- open submenus&#10;-adicion de clases e imagenes para un mejor comportamiento">
+      <created>1474160767192</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1474160767192</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -732,7 +724,8 @@
     <MESSAGE value="Finalizado el diseño de menu de navegacion de submenus de la cabecera de la pagina web" />
     <MESSAGE value="Finalizada maquetacion de la informacion de" />
     <MESSAGE value="Limpieza de informacion que no se usara" />
-    <option name="LAST_COMMIT_MESSAGE" value="Limpieza de informacion que no se usara" />
+    <MESSAGE value="Finalizados requerimientos finales&#10;&#10;- open submenus&#10;-adicion de clases e imagenes para un mejor comportamiento" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizados requerimientos finales&#10;&#10;- open submenus&#10;-adicion de clases e imagenes para un mejor comportamiento" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1041,8 +1034,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="111" column="39" selection-start-line="111" selection-start-column="39" selection-end-line="111" selection-end-column="39" />
+        <state relative-caret-position="-1066">
+          <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

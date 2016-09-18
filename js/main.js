@@ -32,7 +32,6 @@
      * @param _responseOriginal
      */
     function createNavList(_responseParsed, _responseOriginal) {
-        console.warn("Current json", _responseParsed)
 
         var currentUL = document.getElementById("nav_list");
 
@@ -48,8 +47,9 @@
             // principal ul, principal li, pricipal li link, sub ul and sub li
             //_mainUlClass, _mainliClass, _mainLiLinkClass, _subUlCLass, _subLiCLass
             '', 'nav_list_wrapper', 'nav_item', 'nav_subitems'
-        )
-            .buildList();
+        );
+
+        unorderedList.buildList();
     }
 
 
@@ -118,10 +118,9 @@
             var cleanSubMenus = function(e) {
                 var target = e.target || e.srcElement;
 
-                if (target !== currentSubMenu
-                    && !isChildOf(target, currentSubMenu)
-                    && !hasClass(target, 'nav_item')) {
-                    console.warn("clickOutSide");
+                if (target !== currentSubMenu &&
+                    !isChildOf(target, currentSubMenu) &&
+                    !hasClass(target, 'nav_item')) {
 
                     var oldMenuVisible = getOpenSubMenu();
 
@@ -175,12 +174,10 @@
          * @returns {*[]}
          */
         buildList:function ()  {
-            console.warn(this.items);
             var itemUL = this.currentUL;
             var isNew = !itemUL;
 
             if(!itemUL) {
-                console.warn("Es nueva=")
                 itemUL = this.createUL();
             }
 
@@ -189,11 +186,9 @@
             for(var i=0; i< this.items.length; i++){
                 var currentItem = this.items[i];
 
-                console.log("Construyo li y añado url", currentItem.label, currentItem.url)
                 var currentLI = this.createLI(currentItem.label, currentItem.url, this.mainliClass, this.mainLiLinkClass);
 
                 if(currentItem.items.length > 0){
-                    console.warn("sub ul Construyo ul y hago loop sobre los items")
 
                     if(currentLI[1])  {
                         var eventHandler = _hasTouch() ? 'touchstart':'mousedown';
@@ -224,8 +219,6 @@
                 itemUL.appendChild(currentLI[0]);
             }
 
-            console.warn(itemUL)
-
             return [itemUL, isNew];
         }
     };
@@ -242,7 +235,6 @@
 
         var eventHandler = _hasTouch() ? 'touchstart':'mousedown';
         window.addEventListener(eventHandler, function( event ) {
-            console.warn("Holi")
 
             var isClickOutside = !_element.contains(event.target);
             if (isClickOutside) {
