@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc56e4c5-94a0-46c5-a75f-1815a03470b5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/background_reduced.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="FrontEndSolution.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -656,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474160767192</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="code clean">
+      <created>1474160887119</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1474160887119</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -725,7 +732,8 @@
     <MESSAGE value="Finalizada maquetacion de la informacion de" />
     <MESSAGE value="Limpieza de informacion que no se usara" />
     <MESSAGE value="Finalizados requerimientos finales&#10;&#10;- open submenus&#10;-adicion de clases e imagenes para un mejor comportamiento" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalizados requerimientos finales&#10;&#10;- open submenus&#10;-adicion de clases e imagenes para un mejor comportamiento" />
+    <MESSAGE value="code clean" />
+    <option name="LAST_COMMIT_MESSAGE" value="code clean" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
