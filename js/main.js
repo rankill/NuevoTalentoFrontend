@@ -33,29 +33,23 @@
      */
     function createNavList(_responseParsed, _responseOriginal) {
 
-        var currentUL = document.getElementsByClassName("nav_list");
+        var currentUL = document.getElementById("nav_list");
 
-        for (var i=0; i<currentUL.length; i++) {
-            var unorderedList = new UnorderedList
-            (
-                //List items to create the ul
-                _responseParsed.items,
+        var unorderedList = new UnorderedList
+        (
+            //List items to create the ul
+            _responseParsed.items,
 
-                //Unordered list to update
+            //Unordered list to update
+            currentUL,
 
-                currentUL[i],
+            // classes ul items
+            // principal ul, principal li, pricipal li link, sub ul and sub li
+            //_mainUlClass, _mainliClass, _mainLiLinkClass, _subUlCLass, _subLiCLass
+            '', 'nav_list_wrapper', 'nav_item', 'nav_subitems'
+        );
 
-                // classes ul items
-                // principal ul, principal li, pricipal li link, sub ul and sub li
-                //_mainUlClass, _mainliClass, _mainLiLinkClass, _subUlCLass, _subLiCLass
-                '', 'nav_list_wrapper', 'nav_item', 'nav_subitems'
-            );
-
-            unorderedList.buildList();
-        }
-
-
-
+        unorderedList.buildList();
     }
 
 
@@ -99,7 +93,10 @@
             var currentMenuTrigger = _event.target;
 
             //Get the last child of the trigger, this will be the caret icon
-            currentMenuTrigger.lastElementChild.classList.toggle('open')
+
+            var triggerCaret =  currentMenuTrigger.getElementsByTagName('span');
+
+            if(triggerCaret) triggerCaret[0].classList.toggle('open')
 
             //CUrrent submenu visible, it will be an ul
             var currentSubMenu = currentMenuTrigger.nextSibling;
@@ -149,16 +146,18 @@
             if(_liClass) itemLI.classList.add(_liClass)
 
 
-            if(_urlItem) {
-                var linkA = document.createElement('a');
+            var linkA = document.createElement('a');
 
-                if(_linkClass) linkA.classList.add(_linkClass)
-                // linkA.href = _urlItem;
-                // linkA.target = '_blank';
-                linkA.appendChild(document.createTextNode(_value));
+            if(_linkClass) linkA.classList.add(_linkClass)
 
-                itemLI.appendChild(linkA)
+            linkA.appendChild(document.createTextNode(_value));
+
+            if(_urlItem){
+                linkA.href = _urlItem;
+                linkA.target = '_blank';
             }
+
+            itemLI.appendChild(linkA)
 
 
             return [itemLI, linkA];
@@ -192,7 +191,7 @@
             for(var i=0; i< this.items.length; i++){
                 var currentItem = this.items[i];
 
-                var currentLI = this.createLI(currentItem.label, currentItem.url, this.mainliClass, this.mainLiLinkClass);
+                var currentLI = this.createLI(currentItem.label, undefined, this.mainliClass, this.mainLiLinkClass);
 
                 if(currentItem.items.length > 0){
 
