@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc56e4c5-94a0-46c5-a75f-1815a03470b5" name="Default" comment="Body content update">
+    <list default="true" id="cc56e4c5-94a0-46c5-a75f-1815a03470b5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nuevoTalento/stylesheets/main.css" afterPath="$PROJECT_DIR$/css/nuevoTalento/stylesheets/main.css" />
     </list>
     <ignored path="FrontEndSolution.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -49,7 +59,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
               <caret line="122" column="35" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
-              <folding />
+              <folding>
+                <marker date="1475859136000" expanded="true" signature="326:447" ph="{...}" />
+                <marker date="1475859136000" expanded="true" signature="378:445" ph="{...}" />
+                <marker date="1475859136000" expanded="true" signature="632:676" ph="{...}" />
+                <marker date="1475859136000" expanded="true" signature="648:676" ph="{...}" />
+                <marker date="1475859136000" expanded="true" signature="674:676" ph="{...}" />
+                <marker date="1475859136000" expanded="true" signature="4435:4451" ph="{...}" />
+                <marker date="1475859136000" expanded="true" signature="4435:4453" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,7 +77,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2070">
               <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1475859136000" expanded="true" signature="6032:6038" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,9 +98,10 @@
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4395">
-              <caret line="297" column="38" selection-start-line="297" selection-start-column="38" selection-end-line="297" selection-end-column="38" />
+              <caret line="297" column="0" selection-start-line="297" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <marker date="1475859136000" expanded="true" signature="188:199" ph="/** Instructions to check if the nav menu in phone is clicked outside and hide this ...*/" />
               </folding>
             </state>
           </provider>
@@ -91,15 +112,15 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="rankill" />
         <option value="rankil" />
+        <option value="rankill" />
         <option value="legacyrankill &lt;hardcore19&gt;" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="PerformanceHeaderBody" />
       </map>
     </option>
   </component>
@@ -123,23 +144,20 @@
         <option value="$PROJECT_DIR$/css/nuevoTalento/sass/abstracts/_functions.scss" />
         <option value="$PROJECT_DIR$/css/nuevoTalento/sass/abstracts/_mixins.scss" />
         <option value="$PROJECT_DIR$/css/nuevoTalento/sass/base/_helpers.scss" />
+        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/main.scss" />
         <option value="$PROJECT_DIR$/css/nuevoTalento/stylesheets/main.css" />
+        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/base/_icons.scss" />
         <option value="$PROJECT_DIR$/css/nuevoTalento/sass/components/_button.scss" />
         <option value="$PROJECT_DIR$/css/nuevoTalento/sass/components/_input.scss" />
-        <option value="$PROJECT_DIR$/resources/data/menu.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/base/_fonts.scss" />
-        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/abstracts/_classes.scss" />
-        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/base/_base.scss" />
-        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/abstracts/_variables.scss" />
-        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/components/_nav_mobile.scss" />
-        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/main.scss" />
-        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/layout/_header.scss" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/base/_icons.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/resources/data/menu.json" />
+        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/abstracts/_variables.scss" />
+        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/layout/_header.scss" />
+        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/base/_fonts.scss" />
+        <option value="$PROJECT_DIR$/css/nuevoTalento/sass/base/_base.scss" />
         <option value="$PROJECT_DIR$/css/nuevoTalento/sass/themes/_default.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -291,13 +309,13 @@
     <property name="SearchEverywhereHistoryKey" value="ham&#9;FILE&#9;file:///Users/eonlt-3/Desktop/DriveRankill/Rankill/RankillRepos/RockaLabsFrontendTest/css/nuevoTalento/sass/components/_hamburger_menu.scss" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/css/nuevoTalento/sass/components" />
-      <recent name="$PROJECT_DIR$/css/nuevoTalento/sass/base" />
-      <recent name="$PROJECT_DIR$/resources/assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css/nuevoTalento/sass/base" />
+      <recent name="$PROJECT_DIR$/css/nuevoTalento/sass/components" />
+      <recent name="$PROJECT_DIR$/resources/assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -566,63 +584,7 @@
       <option name="project" value="LOCAL" />
       <updated>1474101697165</updated>
     </task>
-    <task id="LOCAL-00007" summary="Limpieza de informacion que no se usara">
-      <created>1474126147266</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1474126147266</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Finalizados requerimientos finales&#10;&#10;- open submenus&#10;-adicion de clases e imagenes para un mejor comportamiento">
-      <created>1474160767192</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1474160767192</updated>
-    </task>
-    <task id="LOCAL-00009" summary="code clean">
-      <created>1474160887119</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1474160887119</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add files">
-      <created>1474161017401</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1474161017401</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Middle dynamic body content">
-      <created>1474161607468</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1474161607468</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Safe height nav bar mobile">
-      <created>1474163337370</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1474163337370</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Mejoramiento del nav bar">
-      <created>1474165242519</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1474165242520</updated>
-    </task>
-    <task id="LOCAL-00014" summary="title updated">
-      <created>1474167543011</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1474167543011</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -631,12 +593,12 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2284345" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.202407" sideWeight="0.50905216" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22100656" sideWeight="0.50745475" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22100656" sideWeight="0.49489796" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22100656" sideWeight="0.49254525" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.202407" sideWeight="0.4909478" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.202407" sideWeight="0.4909478" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -707,23 +669,53 @@
     <MESSAGE value="Optimaze image loader" />
     <MESSAGE value="Finalizado el diseño de menu de navegacion de submenus de la cabecera de la pagina web" />
     <MESSAGE value="Finalizada maquetacion de la informacion de" />
-    <MESSAGE value="Limpieza de informacion que no se usara" />
-    <MESSAGE value="Finalizados requerimientos finales&#10;&#10;- open submenus&#10;-adicion de clases e imagenes para un mejor comportamiento" />
-    <MESSAGE value="code clean" />
-    <MESSAGE value="add files" />
-    <MESSAGE value="Middle dynamic body content" />
-    <MESSAGE value="Safe height nav bar mobile" />
-    <MESSAGE value="Mejoramiento del nav bar" />
-    <MESSAGE value="title updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="title updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizada maquetacion de la informacion de" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/themes/_default.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1475859136000" expanded="true" signature="326:447" ph="{...}" />
+            <marker date="1475859136000" expanded="true" signature="378:445" ph="{...}" />
+            <marker date="1475859136000" expanded="true" signature="632:676" ph="{...}" />
+            <marker date="1475859136000" expanded="true" signature="648:676" ph="{...}" />
+            <marker date="1475859136000" expanded="true" signature="674:676" ph="{...}" />
+            <marker date="1475859136000" expanded="true" signature="4435:4451" ph="{...}" />
+            <marker date="1475859136000" expanded="true" signature="4435:4453" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2880">
+          <caret line="192" column="1" selection-start-line="192" selection-start-column="1" selection-end-line="192" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/config.rb" />
     <entry file="file://$PROJECT_DIR$/assets/css/dist/main.scss" />
     <entry file="file://$PROJECT_DIR$/css/src/main.css" />
     <entry file="file://$PROJECT_DIR$/assets/css/dist/main.scss" />
@@ -819,6 +811,23 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Descargas/rsp1.png" />
+    <entry file="file://$PROJECT_DIR$/resources/assets/caret-black.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/caret-white.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/components/_hamburger_menu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/abstracts/_functions.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -833,15 +842,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/base/_icons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/Linkedin.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+        <state relative-caret-position="171">
+          <caret line="1135" column="1" selection-start-line="1135" selection-start-column="1" selection-end-line="1135" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -849,6 +873,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
           <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/abstracts/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4395">
+          <caret line="297" column="0" selection-start-line="297" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1475859136000" expanded="true" signature="188:199" ph="/** Instructions to check if the nav menu in phone is clicked outside and hide this ...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/data/menu.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/components/_input.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -866,10 +922,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/components/_input.scss">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        <state relative-caret-position="150">
+          <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -880,73 +937,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/stylesheets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="558" column="2" selection-start-line="558" selection-start-column="2" selection-end-line="558" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/abstracts/_classes.scss" />
-    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/components/_hamburger_menu.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django_admin_bootstrapped/static/admin/js/jquery-1.9.1.min.js" />
-    <entry file="file://$PROJECT_DIR$/resources/data/menu.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/vendor/_normalize.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="268" column="12" selection-start-line="268" selection-start-column="12" selection-end-line="268" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="1322" column="0" selection-start-line="1322" selection-start-column="0" selection-end-line="1322" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/caret-black.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/caret-white.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/base/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/abstracts/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="47" column="23" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/components/_nav_mobile.scss" />
-    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="60">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -954,32 +948,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2070">
           <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4395">
-          <caret line="297" column="38" selection-start-line="297" selection-start-column="38" selection-end-line="297" selection-end-column="38" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1475859136000" expanded="true" signature="6032:6038" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/nuevoTalento/sass/base/_icons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,14 +958,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="122" column="35" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
+          <folding>
+            <marker date="1475859136000" expanded="true" signature="326:447" ph="{...}" />
+            <marker date="1475859136000" expanded="true" signature="378:445" ph="{...}" />
+            <marker date="1475859136000" expanded="true" signature="632:676" ph="{...}" />
+            <marker date="1475859136000" expanded="true" signature="648:676" ph="{...}" />
+            <marker date="1475859136000" expanded="true" signature="674:676" ph="{...}" />
+            <marker date="1475859136000" expanded="true" signature="4435:4451" ph="{...}" />
+            <marker date="1475859136000" expanded="true" signature="4435:4453" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
