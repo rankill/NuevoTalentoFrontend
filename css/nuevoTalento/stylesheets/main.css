@@ -591,12 +591,12 @@ a {
 
 /* line 13, ../sass/base/_icons.scss */
 .icon_fb {
-  background-image: url('../../../resources/assets/facebook.png?1473703601');
+  background-image: url('../../../resources/assets/facebook.png?1475858716');
 }
 
 /* line 18, ../sass/base/_icons.scss */
 .icon_lkin {
-  background-image: url('../../../resources/assets/Linkedin.png?1473703601');
+  background-image: url('../../../resources/assets/Linkedin.png?1475858716');
 }
 
 /* line 25, ../sass/base/_icons.scss */
@@ -611,19 +611,19 @@ a {
   position: relative;
   top: -7px;
   right: 47px;
-  background-image: url('../../../resources/assets/caret-black.png?1473703601');
+  background-image: url('../../../resources/assets/caret-black.png?1475858716');
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   /* line 25, ../sass/base/_icons.scss */
   .icon_caret:after {
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
     top: -10px;
     right: 5px;
-    background-image: url('../../../resources/assets/caret-white.png?1473703601');
+    background-image: url('../../../resources/assets/caret-white.png?1475858716');
   }
 }
 /* line 61, ../sass/base/_icons.scss */
@@ -1100,7 +1100,7 @@ header .close_nav_header {
 }
 /* line 78, ../sass/components/_button.scss */
 .btn_fb::before {
-  background: url('../../../resources/assets/facebook.png?1473703601') no-repeat;
+  background: url('../../../resources/assets/facebook.png?1475858716') no-repeat;
   background-size: 17px;
 }
 
@@ -1110,7 +1110,7 @@ header .close_nav_header {
 }
 /* line 88, ../sass/components/_button.scss */
 .btn_lkin::before {
-  background: url('../../../resources/assets/Linkedin.png?1473703601') no-repeat;
+  background: url('../../../resources/assets/Linkedin.png?1475858716') no-repeat;
   background-size: 17px;
 }
 
@@ -1171,12 +1171,12 @@ input {
 }
 /* line 18, ../sass/components/_hamburger_menu.scss */
 .hamburger_menu.open {
-  background: url('../../../resources/assets/menu.png?1473703601') no-repeat;
+  background: url('../../../resources/assets/menu.png?1475858716') no-repeat;
   background-size: 100% 18px;
 }
 /* line 23, ../sass/components/_hamburger_menu.scss */
 .hamburger_menu.close {
-  background: url('../../../resources/assets/close.png?1473703601') no-repeat;
+  background: url('../../../resources/assets/close.png?1475858716') no-repeat;
   background-size: 18px 100%;
 }
 /* line 28, ../sass/components/_hamburger_menu.scss */
@@ -1251,7 +1251,7 @@ body::after {
   width: 100%;
   height: 100%;
   /* Full screen background */
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../resources/assets/background_reduced.jpg?1474127315');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../resources/assets/background_reduced.jpg?1475858716');
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -1271,18 +1271,18 @@ body::after {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media (min-width: 768px) {
   /* line 89, ../sass/themes/_default.scss */
   .main_section .body_section {
     flex-direction: row;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
-/* line 108, ../sass/themes/_default.scss */
+/* line 109, ../sass/themes/_default.scss */
 .main_section .body_section .info_section {
   display: flex;
   flex-direction: column;
@@ -1290,14 +1290,14 @@ body::after {
   padding: 5% 13%;
 }
 @media (min-width: 768px) {
-  /* line 108, ../sass/themes/_default.scss */
+  /* line 109, ../sass/themes/_default.scss */
   .main_section .body_section .info_section {
     margin-right: 34px;
     margin-top: 92px;
     padding: 0;
   }
 }
-/* line 121, ../sass/themes/_default.scss */
+/* line 122, ../sass/themes/_default.scss */
 .main_section .body_section .info_section .main_title {
   text-align: center;
   font-family: 'RobotoRegular', sans-serif;
@@ -1310,13 +1310,13 @@ body::after {
   text-shadow: 0 0 10px #000;
 }
 @media (min-width: 768px) {
-  /* line 121, ../sass/themes/_default.scss */
+  /* line 122, ../sass/themes/_default.scss */
   .main_section .body_section .info_section .main_title {
     width: 401px;
     text-align: left;
   }
 }
-/* line 140, ../sass/themes/_default.scss */
+/* line 141, ../sass/themes/_default.scss */
 .main_section .body_section .info_section .sub_title {
   text-align: center;
   font-family: 'RobotoThin', sans-serif;
@@ -1327,13 +1327,13 @@ body::after {
   margin: 0;
 }
 @media (min-width: 768px) {
-  /* line 140, ../sass/themes/_default.scss */
+  /* line 141, ../sass/themes/_default.scss */
   .main_section .body_section .info_section .sub_title {
     width: 469px;
     text-align: left;
   }
 }
-/* line 158, ../sass/themes/_default.scss */
+/* line 159, ../sass/themes/_default.scss */
 .main_section .body_section .register_section {
   display: flex;
   flex-direction: column;
@@ -1346,29 +1346,29 @@ body::after {
   width: 15em;
   padding: 13px;
 }
-/* line 173, ../sass/themes/_default.scss */
+/* line 174, ../sass/themes/_default.scss */
 .main_section .body_section .register_section label {
   color: #6f6f6f;
 }
-/* line 178, ../sass/themes/_default.scss */
+/* line 179, ../sass/themes/_default.scss */
 .main_section .body_section .register_section .social_register, .main_section .body_section .register_section .local_register_form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-/* line 184, ../sass/themes/_default.scss */
+/* line 185, ../sass/themes/_default.scss */
 .main_section .body_section .register_section .social_register {
   height: 84px;
 }
-/* line 188, ../sass/themes/_default.scss */
+/* line 189, ../sass/themes/_default.scss */
 .main_section .body_section .register_section .local_register_form {
   height: 124px;
 }
-/* line 192, ../sass/themes/_default.scss */
+/* line 193, ../sass/themes/_default.scss */
 .main_section .body_section .register_section .local_register_form input {
   opacity: 0.7;
 }
-/* line 195, ../sass/themes/_default.scss */
+/* line 196, ../sass/themes/_default.scss */
 .main_section .body_section .register_section .local_register_form input:invalid {
   opacity: 0.5;
 }
